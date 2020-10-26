@@ -1,6 +1,6 @@
 package objectcastingpack;
 
-public class Player {
+public class Player extends Team{
 	
 	private int id;
 	private String name;
@@ -14,7 +14,8 @@ public class Player {
 	
 	// para constructor
 	
-	public Player(int id ,String name) {
+	public Player(int id ,String name, int teamId, String teamName) {
+		super(teamId,teamName);
 		this.id =id;
 		this.name= name;
 	}
@@ -71,7 +72,9 @@ public class Player {
 	
 	
 	
-}
+   public void playerMethod() {
+	   System.out.println("This is playerMethods");
+   }
 	
 
 }
