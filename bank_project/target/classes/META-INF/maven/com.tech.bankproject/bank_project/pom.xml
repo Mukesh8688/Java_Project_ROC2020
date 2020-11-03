@@ -5,4 +5,23 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>bank_project </name>
   <description>This is bank project taking inputs from console and verifying some user's requirements</description>
+  
+  <!-- Update Java version 1.8 -->
+   <properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+
+
+  <!-- Adding dependencies PostgreSQL Database -->
+	<dependencies>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.5</version>
+		</dependency>
+
+	</dependencies>
+	
+	
 </project>

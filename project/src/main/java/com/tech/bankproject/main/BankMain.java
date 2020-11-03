@@ -4,6 +4,7 @@ package com.tech.bankproject.main;
 import java.util.Scanner;
 
 import com.tech.bankproject.exception.BusinessException;
+import com.tech.bankproject.model.RegisterModel;
 import com.tech.bankproject.services.BankServicesInterface;
 import com.tech.bankproject.services.impl.BankSerciesInterfaceImpl;
 
@@ -33,13 +34,21 @@ public class BankMain {
 		
 		do {
 		System.out.println();		
-		System.out.println("1) Existing Customer ");
+		System.out.println("1) Existing Customer");
 		System.out.println("2) Sign Up ");
 		System.out.println("3) Admin");
 		System.out.println("4) EXIT");
 		System.out.println("Please enter appropriate choice(1-4) :) ");
 		
-	    userChoice = Integer.parseInt(scanner.nextLine());
+		
+		// to prevent from enter event from keyboard
+	    try {
+		    userChoice = Integer.parseInt(scanner.nextLine());
+	    }catch(NumberFormatException e) {
+	    	System.out.println("You didn't choose any option !!!");
+	    	userChoice = 0;
+	    }
+	    
 	    
 	    // for register and login 
 	    // Declare username and password variable
@@ -51,22 +60,19 @@ public class BankMain {
 		
 		switch (userChoice) {
 		
-		  case 1: //System.out.println("Thank You for interesting ... This option still Under CONSTRUCTION !!!");
+		  case 1: 
 					// For Application Service Menu
 			  
 			  
-			          System.out.println();
-			          System.out.println("Please Enter Username:");
-			          username = scanner.nextLine();
-			          System.out.println("Please Enter Password:");
-			          password = scanner.nextLine();
-			          
+				      RegisterModel registermodel = new RegisterModel();
+				      registermodel.askingUsernamePassword();
+				      
 								try {
 									
-									if(bankServicies.isVerifyUsernamePassword(username, password)) {
+									if(bankServicies.isVerifyUsernamePassword(registermodel.getUsername(), registermodel.getPassword())) {
 										 
 									         System.out.println();
-									         System.out.println("You entered Successfully");
+									         System.out.println("You entered Successfully !!");
 									         System.out.println();
 										      int menuChoice = 0;
 										      do {
@@ -80,7 +86,15 @@ public class BankMain {
 											     System.out.println("4) Exit");
 											     System.out.println("Please enter appropriate choice(1-4) :) ");
 											     
-											     menuChoice = Integer.parseInt(scanner.nextLine());
+											     
+											     // try catch for choose proper menuChoice variable
+											     try {
+											         menuChoice = Integer.parseInt(scanner.nextLine());
+											     }catch(NumberFormatException e) {
+											    	 //System.out.println();
+											    	 //System.out.println("please choose right option...!!");
+											    	 menuChoice = 0;
+											     }
 														    
 											     // for Bank Service Menu
 												 switch (menuChoice) {
@@ -125,14 +139,16 @@ public class BankMain {
 															
 												 default:
 													 
-													 System.out.println("SORRY .. This is INVALIDE choice menu Number !!");
-													 System.out.println("Please Reenter right choice number bank Servie Menu ... ");
+													 System.out.println();
+													 System.out.println("SORRY !!! .. This is INVALIDE choice Menu Number !!");
+													 System.out.println();
+													 System.out.println("Please Reenter right choice number For Bank Servie Menu ...  Thank YOU");
 																
 													 break;
 															
 												 }
 										    		
-										      }while(menuChoice != 3);	
+										      }while(menuChoice != 4);	
 					   
 									  }else {
 										  System.out.println();
@@ -154,28 +170,27 @@ public class BankMain {
 
 	          // For Sign Up 
 	    	 
+	    	 
+	    	 // create RegisterModel object for asking Username and Password input 
+	    	 RegisterModel registerModel = new RegisterModel();
+	    	 
 	    	 System.out.println();
 	    	 System.out.println("Welcome Bank Application Version1.0");
 	    	 System.out.println();
 	    	 
-	    	 // taking input username and password from console
-	    	 System.out.println("Please Enter USERNAME(max length 10):");
-	    	 username = scanner.nextLine();
-	    	 System.out.println("Please Enter PASSWORD: ");
-	    	 password = scanner.nextLine();
-	    	 System.out.println("Please Enter Email: ");
-	    	 String email = scanner.nextLine();
-	    	 
-	    	
+	    	 // taking input username,password and email from console
+	    	 registerModel.askingUsernamePasswordEmail();
 	    	
 	    	 
 	    	 int c = 0;
 	    	 
 	    	 
 	    	 try {
-		    	 c =bankServicies.registerUsername(username, password, email);
+	    		 
+		    	 c =bankServicies.registerUsername(registerModel.getUsername(), registerModel.getPassword(), registerModel.getEmail());
 		    	 
 		    	 if(c != 0 ) {
+		    		 System.out.println();
 		    		 System.out.println("Registration Successfull Done !!");
 		    	 }else {
 		    		 System.out.println("Please Try Again !!");
@@ -193,7 +208,7 @@ public class BankMain {
 	    	   System.out.println();
 	    	   System.out.println("==== Warning !!! This option is for admin User only =====");
 	    	   System.out.println();
-			   System.out.println("If you are not admin user . Please type 8 to exit from this section == OR == Enter any Number to continue ...");
+			   System.out.println("If you are not admin user . Please type 8 to exit this section == OR == Enter any Number to continue ...");
 			   
 	           int admin = Integer.parseInt(scanner.nextLine());
 	           
@@ -212,14 +227,15 @@ public class BankMain {
 	    	 break;
 	    	 
 	     case 4: // number 4 for EXIT system
-	    	 
-	    	 System.out.println("THANK YOU for using  Bank Application Versioin 1.0");
+	    	 System.out.println("\n");
+	    	 System.out.println("<<<== THANK YOU for using  Bank Application Versioin 1.0 ==>>");
 	    	 break;
 	    	 
 	    	 
 
 		default:
-			System.out.println("Please Retype right option ... Or Type 4 for Exit Application ");
+			System.out.println();
+			System.out.println("Please Choose Right option ... Or Type 4 for Exit Application ");
 			break;
 		}
 
