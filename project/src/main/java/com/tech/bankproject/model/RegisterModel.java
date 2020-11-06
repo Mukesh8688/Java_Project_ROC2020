@@ -1,12 +1,25 @@
 package com.tech.bankproject.model;
 
-import java.util.Scanner; 
+import java.util.Scanner;
+
+import org.apache.log4j.Logger; 
 
 public class RegisterModel {
+	
+	
+	//logging all file
+	
+	private static Logger logger = Logger.getLogger(RegisterModel.class);
+    //private static Logger loggerFile = Logger.getLogger(RegisterModel.class);
 	
 	private String username;
 	private String password;
 	private String email;
+	
+	/* passing integer number 1 for customer , 
+	 * 2 for employee and 3 for admin
+	 */
+	private int userType;  
 	
 	
 	// create scanner object
@@ -20,10 +33,11 @@ public class RegisterModel {
 		
 	}
 	
-	public RegisterModel(String username,String password,String email) {
+	public RegisterModel(String username,String password,String email,int userType) {
 		this.username = username;
 		this.password = password;
 		this.email = email;
+		this.userType = userType;
 	}
 	
 	
@@ -54,27 +68,58 @@ public class RegisterModel {
     	this.email = email;
     }
     
+    
+    public int getUserType() {
+    	return userType;
+    }
+    
+    public void setUserType(int userType) {
+    	this.userType = userType;
+    }
+    
     public void askingUsernamePassword() {
     	
     	
-    	System.out.println();
-        System.out.println("Please Enter Username:");
-        setUsername(scanner.nextLine());
-        System.out.println("Please Enter Password:");
-        setPassword(scanner.nextLine());
     	
+//        System.out.println("Please Enter Username:");
+//        setUsername(scanner.nextLine());
+//        System.out.println("Please Enter Password:");
+//        setPassword(scanner.nextLine());
+    	
+    	
+    	System.out.println();
+    	logger.fatal("Please Enter Username:");
+    	setUsername(scanner.nextLine());
+    	logger.trace("entered username:" + getUsername());
+    	logger.fatal("Please Enter Password:");
+        setPassword(scanner.nextLine());
+        logger.trace("entered password:"+getPassword());
+       
     }
     
    public void askingUsernamePasswordEmail() {
     	
     	
-    	System.out.println();
-        System.out.println("Please Enter Username:");
-        setUsername(scanner.nextLine());
-        System.out.println("Please Enter Password:");
-        setPassword(scanner.nextLine());
-        System.out.println("Please Enter Email: ");
-   	    setEmail(scanner.nextLine());
+//    	System.out.println();
+//        System.out.println("Please Enter Username:");
+//        setUsername(scanner.nextLine());
+//        System.out.println("Please Enter Password:");
+//        setPassword(scanner.nextLine());
+//        System.out.println("Please Enter Email: ");
+//   	    setEmail(scanner.nextLine());
+	   
+	   
+   	   System.out.println();
+   	   logger.fatal("Please Enter Username:");
+       setUsername(scanner.nextLine());
+   	   logger.trace("entered username:" + getUsername());
+   	   logger.fatal("Please Enter Password:");
+       setPassword(scanner.nextLine());
+       logger.trace("entered password:"+getPassword());	
+       logger.fatal("Please enter Email:");
+       setEmail(scanner.nextLine());
+       logger.trace("entered email:" + getEmail());
+       
     	
     }
     

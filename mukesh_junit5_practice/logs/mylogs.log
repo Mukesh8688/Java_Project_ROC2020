@@ -1,0 +1,60 @@
+11-04-2020 Wednesday CST 20:49:06.339   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <===================== Set Up Services =====================>
+11-04-2020 Wednesday CST 20:49:06.353   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <===================== Starting Add test case =====================>
+11-04-2020 Wednesday CST 20:49:06.357   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <===================== End test case =====================>
+11-04-2020 Wednesday CST 20:49:06.364   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <===================== Starting Prime Number test case =====================>
+11-04-2020 Wednesday CST 20:49:06.365   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <===================== End test case =====================>
+11-04-2020 Wednesday CST 20:52:35.277   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <===================== Set Up Services =====================>
+11-04-2020 Wednesday CST 20:52:35.295   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:52:35.299   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:52:35.308   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:52:35.309   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:53:20.359   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <===================== Set Up Services =====================>
+11-04-2020 Wednesday CST 20:53:20.372   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:53:20.376   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:53:20.387   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:53:20.388   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:54:12.398   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <===================== Set Up Services =====================>
+11-04-2020 Wednesday CST 20:54:12.408   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:54:12.412   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:54:12.420   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:54:12.421   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:54:41.315   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:54:41.325   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:54:41.336   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:54:41.343   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:54:41.345   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:55:43.355   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:55:43.367   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:55:43.371   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:55:43.379   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:55:43.380   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:57:32.832   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:57:32.844   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:57:32.847   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:57:32.855   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:57:32.856   [main] INFO  com.tech.mukeshservices.test.TestJUnit:48 - ***** Test prime number VALIDE or INVALIDEtrue
+11-04-2020 Wednesday CST 20:57:32.856   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:57:49.718   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:57:49.733   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:57:49.737   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:57:49.744   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:57:49.744   [main] INFO  com.tech.mukeshservices.test.TestJUnit:48 - ***** Test prime number VALIDE or INVALIDE : true
+11-04-2020 Wednesday CST 20:57:49.745   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:58:16.284   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:58:16.294   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:58:16.297   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:58:16.304   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:58:16.305   [main] INFO  com.tech.mukeshservices.test.TestJUnit:48 - ***** Test prime number STATUS : true
+11-04-2020 Wednesday CST 20:58:16.305   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:58:45.828   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:58:45.838   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:58:45.842   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:58:45.850   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:58:45.851   [main] INFO  com.tech.mukeshservices.test.TestJUnit:48 - ***** Test prime number STATUS : true ***** 
+11-04-2020 Wednesday CST 20:58:45.851   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>
+11-04-2020 Wednesday CST 20:59:08.555   [main] INFO  com.tech.mukeshservices.test.TestJUnit:27 - <****************** Set Up Services ********************
+11-04-2020 Wednesday CST 20:59:08.568   [main] INFO  com.tech.mukeshservices.test.TestJUnit:35 - <================ Starting Add test case ==================>
+11-04-2020 Wednesday CST 20:59:08.572   [main] INFO  com.tech.mukeshservices.test.TestJUnit:39 - <================= End test case =====================>
+11-04-2020 Wednesday CST 20:59:08.579   [main] INFO  com.tech.mukeshservices.test.TestJUnit:45 - <================= Starting Prime Number test case ===================>
+11-04-2020 Wednesday CST 20:59:08.580   [main] INFO  com.tech.mukeshservices.test.TestJUnit:48 - **************** Test prime number STATUS : true ******************** 
+11-04-2020 Wednesday CST 20:59:08.580   [main] INFO  com.tech.mukeshservices.test.TestJUnit:49 - <================== End test case ====================>

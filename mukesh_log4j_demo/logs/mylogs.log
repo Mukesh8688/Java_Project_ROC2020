@@ -1,0 +1,36 @@
+11-04-2020 Wednesday CST 20:06:52.263   [main] DEBUG com.tech.LogMain  - Hello from debug
+11-04-2020 Wednesday CST 20:06:52.397   [main] INFO  com.tech.LogMain  - HELLO from INFO
+11-04-2020 Wednesday CST 20:06:52.399   [main] WARN  com.tech.LogMain  - Hello from WARN
+11-04-2020 Wednesday CST 20:06:52.400   [main] ERROR com.tech.LogMain  - Hello from ERROR
+11-04-2020 Wednesday CST 20:06:52.400   [main] FATAL com.tech.LogMain  - Hello from FATAL
+11-04-2020 Wednesday CST 20:06:52.402   [main] ERROR com.tech.services.LogServices  - Hello ERROR Mukesh
+11-04-2020 Wednesday CST 20:22:05.784   [main] DEBUG com.tech.LogMain  - Hello from debug
+11-04-2020 Wednesday CST 20:22:05.895   [main] INFO  com.tech.LogMain  - HELLO from INFO
+11-04-2020 Wednesday CST 20:22:05.896   [main] WARN  com.tech.LogMain  - Hello from WARN
+11-04-2020 Wednesday CST 20:22:05.897   [main] ERROR com.tech.LogMain  - Hello from ERROR
+11-04-2020 Wednesday CST 20:22:05.898   [main] FATAL com.tech.LogMain  - Hello from FATAL
+11-04-2020 Wednesday CST 20:22:05.899   [main] ERROR com.tech.services.LogServices  - Hello ERROR Mukesh
+11-04-2020 Wednesday CST 20:23:01.527   [main] DEBUG LogMain :17 - Hello from debug
+11-04-2020 Wednesday CST 20:23:01.634   [main] INFO  LogMain :18 - HELLO from INFO
+11-04-2020 Wednesday CST 20:23:01.635   [main] WARN  LogMain :19 - Hello from WARN
+11-04-2020 Wednesday CST 20:23:01.635   [main] ERROR LogMain :20 - Hello from ERROR
+11-04-2020 Wednesday CST 20:23:01.636   [main] FATAL LogMain :21 - Hello from FATAL
+11-04-2020 Wednesday CST 20:23:01.638   [main] ERROR LogServices :11 - Hello ERROR Mukesh
+11-04-2020 Wednesday CST 20:23:47.113   [main] DEBUG com.tech.LogMain :17 - Hello from debug
+11-04-2020 Wednesday CST 20:23:47.215   [main] INFO  com.tech.LogMain :18 - HELLO from INFO
+11-04-2020 Wednesday CST 20:23:47.216   [main] WARN  com.tech.LogMain :19 - Hello from WARN
+11-04-2020 Wednesday CST 20:23:47.217   [main] ERROR com.tech.LogMain :20 - Hello from ERROR
+11-04-2020 Wednesday CST 20:23:47.218   [main] FATAL com.tech.LogMain :21 - Hello from FATAL
+11-04-2020 Wednesday CST 20:23:47.219   [main] ERROR tech.services.LogServices :11 - Hello ERROR Mukesh
+11-04-2020 Wednesday CST 20:24:53.801   [main] DEBUG com.tech.LogMain:17 - Hello from debug
+11-04-2020 Wednesday CST 20:24:53.905   [main] INFO  com.tech.LogMain:18 - HELLO from INFO
+11-04-2020 Wednesday CST 20:24:53.906   [main] WARN  com.tech.LogMain:19 - Hello from WARN
+11-04-2020 Wednesday CST 20:24:53.906   [main] ERROR com.tech.LogMain:20 - Hello from ERROR
+11-04-2020 Wednesday CST 20:24:53.908   [main] FATAL com.tech.LogMain:21 - Hello from FATAL
+11-04-2020 Wednesday CST 20:24:53.909   [main] ERROR com.tech.services.LogServices:11 - Hello ERROR Mukesh
+11-04-2020 Wednesday CST 20:26:48.834   [main] DEBUG com.tech.LogMain:17 - Hello from debug
+11-04-2020 Wednesday CST 20:26:48.945   [main] INFO  com.tech.LogMain:18 - HELLO from INFO
+11-04-2020 Wednesday CST 20:26:48.946   [main] WARN  com.tech.LogMain:19 - Hello from WARN
+11-04-2020 Wednesday CST 20:26:48.947   [main] ERROR com.tech.LogMain:20 - Hello from ERROR
+11-04-2020 Wednesday CST 20:26:48.947   [main] FATAL com.tech.LogMain:21 - Hello from FATAL
+11-04-2020 Wednesday CST 20:26:48.949   [main] ERROR com.tech.services.LogServices:11 - Hello ERROR Mukesh

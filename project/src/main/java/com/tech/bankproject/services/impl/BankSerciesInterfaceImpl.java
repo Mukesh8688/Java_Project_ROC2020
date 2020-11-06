@@ -54,7 +54,7 @@ public class BankSerciesInterfaceImpl implements BankServicesInterface{
 		   
              if(username.length() > 3 && password.length() > 3) {
 			   
-            	 isValide = bankServiceDAO.IsVerifyUsernamePassword(username, password);
+            	 isValide = bankServiceDAO.isVerifyUsernamePassword(username, password);
 			   
 		     }else {
 			   
@@ -71,6 +71,40 @@ public class BankSerciesInterfaceImpl implements BankServicesInterface{
 	   
 	   
 	   return isValide;
+   }
+   
+   
+   public int isVarifyUsertype(String username,String password) throws BusinessException{
+	   
+	   /* 1 for Bank Customers
+	    * 2 for Bank Employees
+	    * 3 for Admin
+	    */
+	   
+	   
+	   
+	   int isCusEmp = 0;
+	   
+	   if(username != null && password !=null) {
+		   
+           if(username.length() > 3 && password.length() > 3) {
+			   
+        	   isCusEmp = bankServiceDAO.isVarifyUsertype(username, password);
+			   
+		     }else {
+			   
+			   System.out.println();
+			   throw new BusinessException("Username and Password don't exist... Sorry ... Please Try Again !!!");
+		     }
+		   
+	   }else{
+		   
+		   throw new BusinessException("Username and Password don't exist... Sorry ... Please Try Again !!!");
+		   
+	   }
+	   
+	   
+	   return isCusEmp ;
    }
 
 }
