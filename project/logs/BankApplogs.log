@@ -315,3 +315,11 @@
 11-05-2020 Thursday CST 20:25:49.101   [main] TRACE com.tech.bankproject.model.RegisterModel:93 - entered username:mukesh
 11-05-2020 Thursday CST 20:25:49.105   [main] FATAL com.tech.bankproject.model.RegisterModel:94 - Please Enter Password:
 11-05-2020 Thursday CST 20:25:59.605   [main] TRACE com.tech.bankproject.model.RegisterModel:96 - entered password:pass
+11-08-2020 Sunday CST 08:49:18.203   [main] FATAL com.bankapplication.model.RegisterModel:91 - Please Enter Username:
+11-08-2020 Sunday CST 08:49:21.293   [main] TRACE com.bankapplication.model.RegisterModel:93 - entered username:mukesh
+11-08-2020 Sunday CST 08:49:21.299   [main] FATAL com.bankapplication.model.RegisterModel:94 - Please Enter Password:
+11-08-2020 Sunday CST 08:49:22.866   [main] TRACE com.bankapplication.model.RegisterModel:96 - entered password:pass
+11-08-2020 Sunday CST 08:49:31.497   [main] FATAL com.bankapplication.model.RegisterModel:91 - Please Enter Username:
+11-08-2020 Sunday CST 08:50:12.696   [main] TRACE com.bankapplication.model.RegisterModel:93 - entered username:preet
+11-08-2020 Sunday CST 08:50:12.697   [main] FATAL com.bankapplication.model.RegisterModel:94 - Please Enter Password:
+11-08-2020 Sunday CST 08:50:15.323   [main] TRACE com.bankapplication.model.RegisterModel:96 - entered password:preet

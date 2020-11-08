@@ -134,3 +134,7 @@
 11-05-2020 Thursday CST 20:25:08.037   [main] FATAL com.tech.bankproject.model.RegisterModel:94 - Please Enter Password:
 11-05-2020 Thursday CST 20:25:46.910   [main] FATAL com.tech.bankproject.model.RegisterModel:91 - Please Enter Username:
 11-05-2020 Thursday CST 20:25:49.105   [main] FATAL com.tech.bankproject.model.RegisterModel:94 - Please Enter Password:
+11-08-2020 Sunday CST 08:49:18.203   [main] FATAL com.bankapplication.model.RegisterModel:91 - Please Enter Username:
+11-08-2020 Sunday CST 08:49:21.299   [main] FATAL com.bankapplication.model.RegisterModel:94 - Please Enter Password:
+11-08-2020 Sunday CST 08:49:31.497   [main] FATAL com.bankapplication.model.RegisterModel:91 - Please Enter Username:
+11-08-2020 Sunday CST 08:50:12.697   [main] FATAL com.bankapplication.model.RegisterModel:94 - Please Enter Password:
