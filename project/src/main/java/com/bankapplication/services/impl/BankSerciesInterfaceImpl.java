@@ -3,6 +3,9 @@ package com.bankapplication.services.impl;
 import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
+import com.bankapplication.model.account.BankAccount;
+import com.bankapplication.model.account.BankAccountRegister;
+import com.bankapplication.model.customer.CustomerInfo;
 import com.bankapplication.services.BankServicesInterface;
 
 public class BankSerciesInterfaceImpl implements BankServicesInterface{
@@ -48,13 +51,15 @@ public class BankSerciesInterfaceImpl implements BankServicesInterface{
    @Override
    public boolean isVerifyUsernamePassword(String username,String password) throws BusinessException{
 	   
-	   boolean isValide = true;
+	   boolean isValide = false;
 	   
 	   if(username != null && password !=null) {
 		   
              if(username.length() > 3 && password.length() > 3) {
 			   
-            	 isValide = bankServiceDAO.isVerifyUsernamePassword(username, password);
+            	 if(bankServiceDAO.getUserRegisterDetail(username, password).size() != 0) {
+            		 isValide = true;
+            	 }
 			   
 		     }else {
 			   
@@ -106,5 +111,98 @@ public class BankSerciesInterfaceImpl implements BankServicesInterface{
 	   
 	   return isCusEmp ;
    }
+
+
+/* This is implementation part of New Bank Account opening Services */   
+   
+@Override
+public boolean applyNewBankAcoount(CustomerInfo customerinfo, BankAccountRegister bankAccountRegister) throws BusinessException {
+	boolean isSuccess = false;
+	
+	
+	if(customerinfo != null && bankAccountRegister != null) {
+		
+		if(bankAccountRegister.getAccountType() != 3) {
+			
+			if(verifyAccountRequirements(customerinfo, bankAccountRegister)) {
+		
+	           System.out.println(" You are now DAO Interface :");
+	           int status =  bankServiceDAO.createBankAccount(customerinfo, bankAccountRegister);
+	           
+	           if(status == 1) {
+	        	   isSuccess = true;
+	           }else {
+	        	   isSuccess = false;
+	           }
+	           
+	         
+			}else {
+				
+				throw new BusinessException(" Account Requirements should be fullfil  ");
+				
+			}
+	         
+	         
+		} else {
+			
+			throw new BusinessException(" Account Requirements should be fullfil  ");
+		}
+	
+	} else {
+		
+		throw new BusinessException("Some Data are missing.... Please try Again...Or.. Please contact closest Brank Location. \n ***THANK YOU***");
+		
+	}
+	
+	
+	return isSuccess;
+}
+
+
+@Override
+public boolean viewAccountBalance(BankAccount bankAccount) throws BusinessException {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+
+@Override
+public boolean withdraw(BankAccount bankAccount) throws BusinessException {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+
+@Override
+public boolean deposit(BankAccount bankAccount) throws BusinessException {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+
+@Override
+public boolean balanceTranfer(BankAccount bankAccount) throws BusinessException {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+
+@Override
+public boolean verifyAccountRequirements(CustomerInfo customerinfo,BankAccountRegister bankAccountRegister) throws BusinessException{
+	  boolean isvarify =false;
+	  
+	  /* verify balance */
+	  if(bankAccountRegister.getOpeningBalance() > 0 &&  bankAccountRegister.getBalance() > 0 ) {
+		  isvarify = true; 
+	  }else {
+		  
+		  throw new BusinessException("Opening should be more than zero value!!");
+	  }
+	  
+	  
+	  
+	  
+	  return isvarify;
+}
 
 }

@@ -1,17 +1,22 @@
 package com.bankapplication.model;
 
 import java.util.Scanner;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 import org.apache.log4j.Logger; 
 
 public class RegisterModel {
 	
+
 	
 	//logging all file
 	
 	private static Logger logger = Logger.getLogger(RegisterModel.class);
     //private static Logger loggerFile = Logger.getLogger(RegisterModel.class);
 	
+	
+	private int id;
 	private String username;
 	private String password;
 	private String email;
@@ -33,7 +38,9 @@ public class RegisterModel {
 		
 	}
 	
-	public RegisterModel(String username,String password,String email,int userType) {
+	
+	public RegisterModel(int id ,String username,String password,String email,int userType) {
+		this.id = id ;
 		this.username = username;
 		this.password = password;
 		this.email = email;
@@ -42,6 +49,16 @@ public class RegisterModel {
 	
 	
 	// getter and shetter
+	
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id ) {
+		
+		this.id = id ;
+	}
 	
     public String getUsername() {
     	return username;
@@ -76,6 +93,10 @@ public class RegisterModel {
     public void setUserType(int userType) {
     	this.userType = userType;
     }
+    
+    
+    
+    
     
     public void askingUsernamePassword() {
     	

@@ -23,6 +23,11 @@ public class LogInModel {
 	
 	// for load User information
     private static RegisterModel registermodel = new RegisterModel();
+    
+    
+    /* Method to invoke username */
+    
+    public static String username ;
 	 
      
 	 
@@ -65,7 +70,7 @@ public class LogInModel {
 							 
 							   
 							   CustomerMenu customerMenu = new CustomerMenu();
-							   customerMenu.displayCustomerMenu();
+							   customerMenu.displayCustomeServicerMenu();
 							   
 							   break;
 									

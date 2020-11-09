@@ -38,7 +38,7 @@ class BankServicesDAOImplTest {
 	@Test
 	void testIsVerifyUsernamePassword() throws BusinessException {
 	  
-		boolean isValide = bankServicesDAOImpl.isVerifyUsernamePassword("mukesh", "pass");
+		List<RigerterModel> isValide = bankServicesDAOImpl.getUserRegisterDetail("mukesh", "pass");
 		assertTrue(isValide);
      
 	}
@@ -47,7 +47,7 @@ class BankServicesDAOImplTest {
 	@Test
 	void testIsVerifyUsernamePasswordNegative() throws BusinessException {
 	  
-		boolean isValide = bankServicesDAOImpl.isVerifyUsernamePassword("mukesh", "1111");
+		boolean isValide = bankServicesDAOImpl.getUserRegisterDetail("mukesh", "1111");
 		assertFalse(isValide);
      
 	}

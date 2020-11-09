@@ -1,4 +1,4 @@
-package com.bankapplication.model;
+package com.bankapplication.model.account;
 
 import java.util.Date;
 
@@ -110,6 +110,14 @@ public class BankAccount {
 
 	public void setBranchLoc(String branchLoc) {
 		this.branchLoc = branchLoc;
+	}
+
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
 	}
 	
 	
