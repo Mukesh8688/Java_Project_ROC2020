@@ -1,6 +1,6 @@
-package com.comparator;
+package comparator;
 
-import com.comparable.Movie;
+import comparable.Movie;
 import java.util.Comparator;
 
 public class NameCompare implements Comparator<Movie>{

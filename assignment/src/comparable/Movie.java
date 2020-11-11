@@ -1,4 +1,4 @@
-package com.comparable;
+package comparable;
 
 import java.lang.Comparable;
 

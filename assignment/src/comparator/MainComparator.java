@@ -1,9 +1,9 @@
-package com.comparator;
+package comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import com.comparable.Movie;
+import comparable.Movie;
 
 public class MainComparator {
 

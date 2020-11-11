@@ -1,6 +1,6 @@
-package com.comparator;
+package comparator;
 
-import com.comparable.Movie;
+import comparable.Movie;
 import java.util.Comparator;
 
 // class to compare web series by rating
