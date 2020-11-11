@@ -3,6 +3,7 @@ package com.bankapplication.model.employee;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.spi.LoggerFactory;
 
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.customer.CustomerMenu;
@@ -39,12 +40,13 @@ public class EmployeeMenu {
 		  do {   
 			   
 		    	 System.out.println(); 
-				 System.out.println(" Employee Menu ");
-				 System.out.println("-----------------");
-				 System.out.println("1) View Customer's Account ");
-				 System.out.println("2) View logs ");
-				 System.out.println("3) Approve or Reject Customer's Account");
+				 System.out.println(" Employee Section Menu ");
+				 System.out.println("=============================");
+				 System.out.println("1) View Customer's Account. ");
+				 System.out.println("2) View log of all transaction ");
+				 System.out.println("3) Update Customer's Account Status.");
 				 System.out.println("4) EXIT ");
+				 System.out.println("==============================");
 			     System.out.println("Please enter appropriate choice(1-4) :) ");
 			     
 			     
@@ -87,9 +89,25 @@ public class EmployeeMenu {
 								
 						 
 				 case 2:
-					 // for view logs
+					 // for view all transaction by account number
 							 
-					 System.out.println("Thank You for interesting ... This option still Under CONSTRUCTION !!!");
+					
+					 
+					 System.out.println("View all transactions by account number:");
+					 System.out.println("------------------------------------------");
+					 logger.fatal("Enter Account Number : ");
+					 int accountNumber = Integer.parseInt(scanner.nextLine());
+					 
+					 try {
+						 
+						 
+						 bankServicesInterface.getAllTransactionByAccountNumber(accountNumber);
+						 
+						 
+					 }catch(BusinessException e) {
+						 
+						 logger.info(e.getMessage());
+					 }
 						 
 	
 					 
@@ -102,7 +120,23 @@ public class EmployeeMenu {
 					 // Approve or Reject Customer's Account
 					 
 					 System.out.println("Thank You for interesting ... This option still Under CONSTRUCTION !!!");
-				 
+				     
+					 System.out.println("Bank Account Status Admin Section :");
+					 System.out.println("----------------------------------");
+					 logger.fatal("Enter Account Number : ");
+					 int accountNumberForStatus = Integer.parseInt(scanner.nextLine());
+					 
+					 try {
+						 
+						 
+						 bankServicesInterface.changeBankAccountStatus(accountNumberForStatus);
+						 
+						 
+						 
+					 }catch(BusinessException e) {
+						 
+						 logger.info(e.getMessage());
+					 }
 						    
 						  
 										

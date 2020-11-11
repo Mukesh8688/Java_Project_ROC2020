@@ -2,15 +2,21 @@ package com.bankapplication.main;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
+import com.bankapplication.dao.BankServicesDAOInterface;
+import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.SignUpModel;
+import com.bankapplication.model.admin.AdminSection;
+import com.bankapplication.services.impl.BankSerciesInterfaceImpl;
 
 
 
 public class BankMain {
 	
-	
+
 
 	public static void main(String[] args)  {
 		
@@ -92,25 +98,28 @@ public class BankMain {
 				
 				
 		     case 3:
-		    	 
-		    	 
+		    	
 		    	   System.out.println();
 		    	   System.out.println("==== Warning !!! This option is for admin User only =====");
 		    	   System.out.println();
-				   System.out.println("If you are not admin user ... \n Please type 8 to exit this section ... \n OR Enter any Number to continue ...");
+				   System.out.println("If you are not admin user ... \nPlease type 8 to exit this section ... \nOR Enter any Number to continue ...");
 				   
 		           int admin = 0;
 		           
 		           try {
-		             Integer.parseInt(scanner.nextLine());
+		        	   admin = Integer.parseInt(scanner.nextLine());
 		           }catch(NumberFormatException e){
 		        	   admin = 0;
 		           }
 		           
 		           if(admin !=8) {
 		        	   
-		        	   System.out.println();
-		        	   System.out.println("THANK YOU for your interest ... \n under CONSTRUCTION ....");
+		        	  System.out.println();
+	
+				      LogInModel loginAdmin = new LogInModel();
+				      loginAdmin.loginBankApp();
+						    
+					
 		        	   
 		           }else {
 		        	   
@@ -120,6 +129,8 @@ public class BankMain {
 		
 		    	 
 		    	 break;
+		    	 
+		    	 
 		    	 
 		     case 4: // number 4 for EXIT system
 		    	 System.out.println("\n");

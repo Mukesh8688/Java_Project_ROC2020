@@ -6,6 +6,10 @@ public class BankAccountQueries {
 			+ "(username,password, email,usertype)\n"
 			+ "VALUES(?, ?, ?,?);" ;
 	
+	public static String REGISTER_EMPLOYEE_USER = "INSERT INTO project_schema.bankApp_register\n"
+			+ "(username,password, email,usertype)\n"
+			+ "VALUES(?, ?, ?,?);" ;
+	
 	
 	public static String GET_ALL_REGISTERS_BY_USERNAMEPASSWORD = "SELECT id,username,password,email,usertype from project_schema.bankApp_register\n"
 			     + "WHERE username = ? and password = ?";
@@ -61,5 +65,13 @@ public class BankAccountQueries {
 	
 	public static String UPDATE_BANKACC_BY_TRANSACTIONTYPE = "UPDATE project_schema.bank_account\n"
 			+ "SET balance= ? WHERE accountnumber= ? ;";
+	
+	public static String GET_ALL_TRANSACTION_BY_ACCNUM ="SELECT transaction_id, trans_type, amount, total_balance, transactiondate\n"
+			+ "FROM project_schema.bank_transactions WHERE account_accountnumber = ? ;";
+	
+	public static String UPDATE_BANKACCSTATUS_BY_ACCNUM = "UPDATE project_schema.bank_account\n"
+			+ "SET account_status= ? WHERE accountnumber= ? ;";
+	
+
 
 }

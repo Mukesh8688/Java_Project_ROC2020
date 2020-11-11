@@ -9,6 +9,7 @@ import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
+import com.bankapplication.model.account.AccountTransaction;
 import com.bankapplication.model.account.BankAccount;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.model.customer.BalanceTranfer;
@@ -22,6 +23,7 @@ public class BankSerciesInterfaceImpl implements BankServicesInterface{
 	//log4j
     private static Logger logger = Logger.getLogger(BankSerciesInterfaceImpl.class);
 	
+    
 	BankServicesDAOInterface bankServiceDAO = new BankServicesDAOImpl();
 	
    //Scanner
@@ -256,19 +258,25 @@ public int bankTransaction(int accountTypeChoice, int tranastionType) throws Bus
 				list.displayAccountDeatails();
 			}
 			
-		    logger.fatal("It seems more than one account, Please enter account number :");
+		    logger.fatal("It seems more than one account...\nPlease enter account number :");
 		    int accountNumber = Integer.parseInt(scanner.nextLine());
 		    
 		    /* test entered account Number match with given customer id or Not */
+		    boolean isVarifyAccNum = false;
 		    for(BankAccountRegister list: accountBalanceList ) {
 		    	if(list.getCustomerAccountNum() == accountNumber ) {
+		    		isVarifyAccNum = true;
 		    		break;
-		    		
-		    	}else {
-		    		throw new BusinessException("Entered account number should be from given account numbers ... \nPlease try again ...");
 		    	}
-				
+		    	
+		    	isVarifyAccNum = false;
 			}
+		    
+		    if(isVarifyAccNum == false) {
+		    	
+		        throw new BusinessException("Entered account number doesn't match ... \nPlease try again ...");
+		 
+		    }
 		    
 		    logger.trace("entetedACCNum: "+ accountNumber );
 		    
@@ -494,6 +502,82 @@ public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) 
 	
 	
 	
+}
+
+
+@Override
+public void getAllTransactionByAccountNumber(int accountNumber) throws BusinessException {
+	
+	if(accountNumber > 0) {
+		
+		
+		List<AccountTransaction>  accountTransactionList = bankServiceDAO.getAllTransactionsByAccountNumber(accountNumber);
+		
+		System.out.println("All transaction of " + accountNumber);
+		System.out.println("------------------------------------");
+		
+		for(AccountTransaction accountTransaction : accountTransactionList ) {
+			
+			logger.fatal(accountTransaction.toString());
+			
+		}
+		
+		
+	}else {
+		
+		throw new BusinessException("Account Number doesn't exist !!...\nPlease try again ....");
+	}
+	
+}
+
+
+@Override
+public int changeBankAccountStatus(int accountNumber) throws BusinessException {
+	int status = 0;
+	if(accountNumber > 0) {
+		System.out.println();
+		System.out.println(" ACCOUNT STATUS NUMBER");
+		System.out.println("------------------------");
+		System.out.println("1) ACTIVE");
+		System.out.println("2) SUSPEND");
+		System.out.println("3) CLOSED");
+		System.out.println("------------------------");
+		logger.fatal("Please enter number to change status:" );
+		int accountStatus = Integer.parseInt(scanner.nextLine());
+		
+		status =  bankServiceDAO.updateBankAccountStatus(accountNumber, accountStatus);
+		
+		if(status == 1) {
+			
+			logger.fatal("BAnk Account status changed successfully ...");
+		}
+		
+	}else {
+		
+		throw new BusinessException("Account Number doesn't exist...\nPlease try again...");
+	}
+	
+	
+	
+	return status;
+}
+
+
+@Override
+public int createEmployeeUserProfile(String username, String password, String email, int usertype)
+		throws BusinessException {
+     int createStatus = 0;
+     
+     if(username.length() !=0 && password.length() !=0 && usertype == 2) {
+    	 
+    	 createStatus =  bankServiceDAO.createEmployeeUserProfile(username, password, email, usertype);
+    	 
+    	 if(createStatus ==0) {
+    		 throw new BusinessException("Action is faill...\nPlease try again...");
+    	 }
+     }
+
+	return createStatus;
 }
 
 

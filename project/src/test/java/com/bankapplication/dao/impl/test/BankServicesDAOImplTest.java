@@ -25,31 +25,48 @@ class BankServicesDAOImplTest {
 	}
 	
 	
-    // test for username = mukesh,password = pass and email = cmukesh8688@gmail.com
+    // testing ResiterUsername
 	
 	@Test
 	void testRegisterUsername() throws BusinessException {
-		int n  = bankServicesDAOImpl.registerUsername("mukesh", "pass", "cmukesh8688@gmail.com");
+		String username = "preet";
+		String password = "pass";
+		String email = "preet@gmail.com";
+		
+		int n  = bankServicesDAOImpl.registerUsername(username, username,email);
+		assertEquals(1, n);
+	}
+	
+   // Validate same username and email
+   // 
+	
+	@Test
+	void testNegativeRegisterUsername() throws BusinessException {
+		String username = "preet";
+		String password = "pass";
+		String email = "preet@gmail.com";
+		
+		int n  = bankServicesDAOImpl.registerUsername(username, username,email);
 		assertEquals(1, n);
 	}
 	
 	
 
-	@Test
-	void testIsVerifyUsernamePassword() throws BusinessException {
-	  
-		List<RigerterModel> isValide = bankServicesDAOImpl.getUserRegisterDetail("mukesh", "pass");
-		assertTrue(isValide);
-     
-	}
-	
-	
-	@Test
-	void testIsVerifyUsernamePasswordNegative() throws BusinessException {
-	  
-		boolean isValide = bankServicesDAOImpl.getUserRegisterDetail("mukesh", "1111");
-		assertFalse(isValide);
-     
-	}
+//	@Test
+//	void testIsVerifyUsernamePassword() throws BusinessException {
+//	  
+//		List<RigerterModel> isValide = bankServicesDAOImpl.getUserRegisterDetail("mukesh", "pass");
+//		assertTrue(isValide);
+//     
+//	}
+//	
+//	
+//	@Test
+//	void testIsVerifyUsernamePasswordNegative() throws BusinessException {
+//	    
+//		boolean isValide = bankServicesDAOImpl.getUserRegisterDetail("mukesh", "1111");
+//		assertFalse(isValide);
+//     
+//	}
 
 }

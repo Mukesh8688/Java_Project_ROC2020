@@ -2119,3 +2119,182 @@ Please try again...
 11-10-2020 Tuesday CST 15:14:15.138   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:108 - Enter Account Number:
 11-10-2020 Tuesday CST 15:14:19.893   [main] TRACE com.bankapplication.model.customer.CustomerViewAccBalance:111 - Entered ACC:1000003
 11-10-2020 Tuesday CST 15:14:19.894   [main] TRACE com.bankapplication.model.customer.CustomerViewAccBalance:112 - Entered choiceEmployee:1
+11-10-2020 Tuesday CST 19:25:37.290   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 19:25:41.453   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:priya
+11-10-2020 Tuesday CST 19:25:41.453   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 19:25:43.138   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 19:25:48.158   [main] FATAL com.bankapplication.model.customer.CustomerMenu:97 - Enter Account Number : 
+11-10-2020 Tuesday CST 19:25:59.264   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:514 - Account Transaction [ Transaction Id=105, Transaction Type=2, Amount=$20.0, Account Number=1000003, Total Balance=$220.0, Transaction Date=2020-11-10 ]
+11-10-2020 Tuesday CST 19:49:05.015   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 19:49:08.593   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:priya
+11-10-2020 Tuesday CST 19:49:08.594   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 19:49:10.835   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 19:49:28.500   [main] FATAL com.bankapplication.model.customer.CustomerMenu:125 - Enter Account Number : 
+11-10-2020 Tuesday CST 19:49:49.803   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:514 - [ Transaction Id=105, Transaction Type=2, Amount=$20.0, Account Number=1000003, Total Balance=$220.0, Transaction Date=2020-11-10 ]
+11-10-2020 Tuesday CST 19:50:59.738   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 19:51:03.422   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:priya
+11-10-2020 Tuesday CST 19:51:03.423   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 19:51:05.041   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 19:51:08.613   [main] FATAL com.bankapplication.model.customer.CustomerMenu:125 - Enter Account Number : 
+11-10-2020 Tuesday CST 19:51:18.709   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:538 - Please enter number to change status:
+11-10-2020 Tuesday CST 19:51:38.937   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:545 - BAnk Account status changed successfully ...
+11-10-2020 Tuesday CST 21:46:55.671   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 21:47:00.309   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 21:47:00.313   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 21:47:03.115   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 21:54:32.524   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 21:54:38.226   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 21:54:38.230   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 21:54:40.565   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 21:58:41.279   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 21:58:47.870   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 21:58:47.874   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 21:58:50.536   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 22:02:51.238   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:02:56.689   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 22:02:56.694   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:02:58.925   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 22:03:23.759   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:130 - Enter employee Username:
+11-10-2020 Tuesday CST 22:03:38.140   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:132 - employeeUsername:Jasmin
+11-10-2020 Tuesday CST 22:03:38.141   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:133 - Enter employee Password:
+11-10-2020 Tuesday CST 22:05:19.918   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:05:24.052   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 22:05:24.052   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:05:25.916   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 22:05:28.952   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:130 - Enter employee Username:
+11-10-2020 Tuesday CST 22:05:33.037   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:132 - employeeUsername:jasmin
+11-10-2020 Tuesday CST 22:05:33.037   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:133 - Enter employee Password:
+11-10-2020 Tuesday CST 22:05:34.735   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:135 - employeePassword:pass
+11-10-2020 Tuesday CST 22:05:34.736   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:137 - Enter employee email address:
+11-10-2020 Tuesday CST 22:05:42.169   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:139 - employeeUsername:jasmin@gmail.com
+11-10-2020 Tuesday CST 22:05:42.205   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:160 - Transaction is faill...
+Please try again...
+11-10-2020 Tuesday CST 22:10:39.598   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:10:43.048   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 22:10:43.049   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:10:44.673   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 22:10:47.517   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:130 - Enter employee Username:
+11-10-2020 Tuesday CST 22:11:02.754   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:132 - employeeUsername:john
+11-10-2020 Tuesday CST 22:11:02.754   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:133 - Enter employee Password:
+11-10-2020 Tuesday CST 22:11:04.359   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:135 - employeePassword:pass
+11-10-2020 Tuesday CST 22:11:04.360   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:137 - Enter employee email address:
+11-10-2020 Tuesday CST 22:11:10.319   [main] INFO  com.bankapplication.services.impl.BankSerciesInterfaceImpl:139 - employeeUsername:john@gmail.com
+11-10-2020 Tuesday CST 22:11:10.330   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:165 - Employee Account Created Successfully ...
+11-10-2020 Tuesday CST 22:11:16.218   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:11:19.637   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:john
+11-10-2020 Tuesday CST 22:11:19.638   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:11:21.039   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 22:11:33.856   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:108 - Enter Account Number:
+11-10-2020 Tuesday CST 22:11:38.451   [main] TRACE com.bankapplication.model.customer.CustomerViewAccBalance:111 - Entered ACC:1000003
+11-10-2020 Tuesday CST 22:11:38.452   [main] TRACE com.bankapplication.model.customer.CustomerViewAccBalance:112 - Entered choiceEmployee:1
+11-10-2020 Tuesday CST 22:12:00.097   [main] TRACE com.bankapplication.model.customer.CustomerViewAccBalance:115 - Entered choiceEmployee:2
+11-10-2020 Tuesday CST 22:12:00.111   [main] FATAL com.bankapplication.model.customer.CustomerMenu:83 - No Record Found...
+11-10-2020 Tuesday CST 22:13:08.910   [main] FATAL com.bankapplication.model.customer.CustomerMenu:155 - <<=== You are Exit of Employee Menu ===>
+11-10-2020 Tuesday CST 22:13:20.584   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:13:23.180   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:preet
+11-10-2020 Tuesday CST 22:13:23.180   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:13:25.584   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:preet
+11-10-2020 Tuesday CST 22:13:32.403   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000005
+11-10-2020 Tuesday CST 22:13:32.403   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:13:32.404   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 1000.0
+11-10-2020 Tuesday CST 22:13:32.404   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000004
+11-10-2020 Tuesday CST 22:13:32.404   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Saving Account
+11-10-2020 Tuesday CST 22:13:32.404   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 980.0
+11-10-2020 Tuesday CST 22:13:32.404   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:13:32.404   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:13:32.405   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 220.0
+11-10-2020 Tuesday CST 22:14:04.217   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:80 - Enter Account Number:
+11-10-2020 Tuesday CST 22:14:13.388   [main] TRACE com.bankapplication.model.customer.CustomerViewAccBalance:82 - Entered ACC:1000003
+11-10-2020 Tuesday CST 22:14:13.399   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:14:13.400   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:14:13.401   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 220.0
+11-10-2020 Tuesday CST 22:14:26.672   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 22:14:26.673   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 22:14:26.674   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 22:14:31.574   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 22:14:31.574   [main] TRACE com.bankapplication.model.account.BankAccountRegister:261 - AccoutTypeChoice:1
+11-10-2020 Tuesday CST 22:14:31.599   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000005
+11-10-2020 Tuesday CST 22:14:31.600   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:14:31.600   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 1000.0
+11-10-2020 Tuesday CST 22:14:31.600   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:14:31.601   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:14:31.601   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 220.0
+11-10-2020 Tuesday CST 22:14:31.601   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:261 - It seems more than one account, Please enter account number :
+11-10-2020 Tuesday CST 22:14:46.300   [main] FATAL com.bankapplication.model.customer.CustomerMenu:167 - Entered account number should be from given account numbers ... 
+Please try again ...
+11-10-2020 Tuesday CST 22:15:49.097   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 22:15:49.099   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 22:15:49.099   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 22:15:51.160   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 22:15:51.161   [main] TRACE com.bankapplication.model.account.BankAccountRegister:261 - AccoutTypeChoice:1
+11-10-2020 Tuesday CST 22:15:51.200   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000005
+11-10-2020 Tuesday CST 22:15:51.201   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:15:51.201   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 1000.0
+11-10-2020 Tuesday CST 22:15:51.202   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:15:51.202   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:15:51.202   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 220.0
+11-10-2020 Tuesday CST 22:15:51.202   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:261 - It seems more than one account, Please enter account number :
+11-10-2020 Tuesday CST 22:15:59.933   [main] FATAL com.bankapplication.model.customer.CustomerMenu:202 - Entered account number should be from given account numbers ... 
+Please try again ...
+11-10-2020 Tuesday CST 22:16:10.693   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 22:16:10.693   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 22:16:10.693   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 22:16:13.528   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:2
+11-10-2020 Tuesday CST 22:16:13.528   [main] TRACE com.bankapplication.model.account.BankAccountRegister:261 - AccoutTypeChoice:2
+11-10-2020 Tuesday CST 22:16:13.551   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:291 - entetedACCNum: 1000004
+11-10-2020 Tuesday CST 22:16:13.552   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:292 - 
+Please enter Amount what you want to make a withdraw :
+11-10-2020 Tuesday CST 22:16:24.098   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:294 - entetedACCNum: 20.0
+11-10-2020 Tuesday CST 22:16:24.185   [main] FATAL com.bankapplication.model.customer.CustomerMenu:161 - Your bank transaction successfully done ....
+11-10-2020 Tuesday CST 22:16:24.186   [main] FATAL com.bankapplication.model.customer.CustomerMenu:162 - See You Again ...
+11-10-2020 Tuesday CST 22:21:33.424   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:21:35.687   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:preet
+11-10-2020 Tuesday CST 22:21:35.688   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:21:40.097   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:preet
+11-10-2020 Tuesday CST 22:21:46.121   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 22:21:46.121   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 22:21:46.122   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 22:21:48.693   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 22:21:48.693   [main] TRACE com.bankapplication.model.account.BankAccountRegister:261 - AccoutTypeChoice:1
+11-10-2020 Tuesday CST 22:22:05.667   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000005
+11-10-2020 Tuesday CST 22:22:05.671   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:22:05.674   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 1000.0
+11-10-2020 Tuesday CST 22:22:07.675   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:22:07.679   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:22:07.682   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 220.0
+11-10-2020 Tuesday CST 22:22:10.452   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:261 - It seems more than one account, Please enter account number :
+11-10-2020 Tuesday CST 22:30:04.110   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000005
+11-10-2020 Tuesday CST 22:30:04.115   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:30:04.118   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 1000.0
+11-10-2020 Tuesday CST 22:30:04.884   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:30:04.888   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:30:04.891   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 220.0
+11-10-2020 Tuesday CST 22:30:05.630   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:261 - It seems more than one account...,
+Please enter account number :
+11-10-2020 Tuesday CST 22:30:35.061   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:281 - entetedACCNum: 1000003
+11-10-2020 Tuesday CST 22:30:35.538   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:283 - Please enter Amount what you want to make a withdraw :
+11-10-2020 Tuesday CST 22:30:42.815   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:285 - entetedACCNum: 20.0
+11-10-2020 Tuesday CST 22:30:58.190   [main] FATAL com.bankapplication.model.customer.CustomerMenu:161 - Your bank transaction successfully done ....
+11-10-2020 Tuesday CST 22:31:22.142   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 22:31:22.149   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 22:31:22.154   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 22:31:26.798   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 22:31:26.806   [main] TRACE com.bankapplication.model.account.BankAccountRegister:261 - AccoutTypeChoice:1
+11-10-2020 Tuesday CST 22:31:33.636   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000005
+11-10-2020 Tuesday CST 22:31:33.640   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:31:33.643   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 1000.0
+11-10-2020 Tuesday CST 22:31:34.064   [main] TRACE com.bankapplication.model.account.BankAccountRegister:424 - 1000003
+11-10-2020 Tuesday CST 22:31:34.068   [main] TRACE com.bankapplication.model.account.BankAccountRegister:425 - Checking Account
+11-10-2020 Tuesday CST 22:31:34.072   [main] TRACE com.bankapplication.model.account.BankAccountRegister:426 - 200.0
+11-10-2020 Tuesday CST 22:31:34.561   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:261 - It seems more than one account...,
+Please enter account number :
+11-10-2020 Tuesday CST 22:31:50.564   [main] FATAL com.bankapplication.model.customer.CustomerMenu:167 - Entered account number doesn't match ... 
+Please try again ...
+11-10-2020 Tuesday CST 22:50:57.010   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:51:02.501   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:priya
+11-10-2020 Tuesday CST 22:51:02.501   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:51:04.279   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-10-2020 Tuesday CST 22:51:44.697   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 22:51:46.796   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
+11-10-2020 Tuesday CST 22:51:46.797   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 22:51:51.975   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass

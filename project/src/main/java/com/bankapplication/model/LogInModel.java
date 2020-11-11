@@ -1,6 +1,9 @@
 package com.bankapplication.model;
 
+import com.bankapplication.dao.BankServicesDAOInterface;
+import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
+import com.bankapplication.model.admin.AdminSection;
 import com.bankapplication.model.customer.CustomerMenu;
 import com.bankapplication.model.employee.EmployeeMenu;
 import com.bankapplication.services.BankServicesInterface;
@@ -8,13 +11,22 @@ import com.bankapplication.services.impl.BankSerciesInterfaceImpl;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 
 
 public class LogInModel {
 	
+	//log4j
+    public static Logger logger = Logger.getLogger(BankSerciesInterfaceImpl.class);
+    
+    
+	// DAO Services
+	public static  BankServicesDAOInterface bankServiceDAO = new BankServicesDAOImpl();
 	
+   //Scanner
 	
-	private static Scanner scanner = new Scanner(System.in);
+	public static Scanner scanner = new Scanner(System.in);
 	
 	
 	 // create object to interact BankServices
@@ -97,9 +109,19 @@ public class LogInModel {
 								
 						   case 3: // For Admin
 							   
-							   System.out.println(" !!! YOU ARE ADMIN USER !!!! ");
-							   System.out.println();
-							   System.out.println("... Under CONSTRUCTION ...");
+							  
+					    	   AdminSection adminSection = new AdminSection();
+							   
+							  
+							    	
+							   int adminChoice = adminSection.displayAdminMenu();
+							   // asking Employee Information
+							   adminSection.displayRequirementForEmployee(adminChoice);
+							   if(adminSection != null) {
+							      adminSection.createEmployeeUserProfile(adminSection);
+							    }
+							    	
+							  
 							   
 									
 									

@@ -17,6 +17,7 @@ import com.bankapplication.dao.dbutil.PostgresDBConncetion;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.RegisterModel;
+import com.bankapplication.model.account.AccountTransaction;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.model.customer.CustomerInfo;
 import com.bankapplication.services.BankUsernamePasswordInterface;
@@ -950,6 +951,126 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 		
 		return bankAccountDetails;
 	 }
+
+
+
+	@Override
+	public List<AccountTransaction> getAllTransactionsByAccountNumber(int accountNumber) throws BusinessException {
+		
+		List<AccountTransaction> accountTransactionList = new ArrayList<>();
+		
+		 try(Connection connection = PostgresDBConncetion.getConnection()){
+	    		
+	    		String sql = BankAccountQueries.GET_ALL_TRANSACTION_BY_ACCNUM ;
+	    		
+	    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+	    		preparedStatement.setInt(1,accountNumber);
+	    		
+	    		
+	    		ResultSet resultSet = preparedStatement.executeQuery();
+	    		
+	    		while(resultSet.next()) {
+	    			
+	    			AccountTransaction accountTransaction = new AccountTransaction(resultSet.getInt("transaction_id"),resultSet.getInt("trans_type") , resultSet.getDouble("amount"), 
+	    					accountNumber, resultSet.getDouble("total_balance"), resultSet.getDate("transactiondate"));
+	    			
+	    			accountTransactionList.add(accountTransaction);
+	    			
+	    		}
+	    			
+	    
+	    		
+	    	}catch(ClassNotFoundException|SQLException e) {
+	    		
+	    		throw new BusinessException("Account Number doesn't Exist ...\nPlease Try Again ...");
+	    	}
+	    
+		
+		
+		return accountTransactionList;
+	}
+
+
+
+	@Override
+	public int updateBankAccountStatus(int accountNumber, int accountStatus) throws BusinessException {
+		int status = 0;
+		
+        try(Connection connection = PostgresDBConncetion.getConnection()){
+    		
+	
+			    String updateBankAccountsql = BankAccountQueries.UPDATE_BANKACCSTATUS_BY_ACCNUM;
+			    
+			    PreparedStatement preparedSatementBankAccount = connection.prepareStatement(updateBankAccountsql);	
+			    preparedSatementBankAccount.setDouble(1,accountStatus);
+			    preparedSatementBankAccount.setInt(2,accountNumber );
+			    
+			    
+			    int updateStatus = preparedSatementBankAccount.executeUpdate();
+			    
+			    if(updateStatus !=1) {
+			    	throw new BusinessException("Update Bank Account transaction fail...");
+			    	
+
+			    }
+			    
+			    status = 1;
+			
+	    	
+    	
+
+		 }catch(ClassNotFoundException|SQLException e) {
+	    		
+			    logger.trace(e.getMessage());
+	    		throw new BusinessException("Account Number doesn't Exist ...\nPlease Try Again ...");
+	    }	
+		
+		
+		return status;
+	}
+
+
+
+	@Override
+	public int createEmployeeUserProfile(String username, String password, String email, int usertype)
+			throws BusinessException {
+		int status =0;
+		
+		
+		try(Connection connection = PostgresDBConncetion.getConnection()){
+    		
+			
+		    String updateBankAccountsql = BankAccountQueries.REGISTER_EMPLOYEE_USER;
+		    
+		    PreparedStatement preparedSatementBankAccount = connection.prepareStatement(updateBankAccountsql);	
+		    preparedSatementBankAccount.setString(1,username.toLowerCase());
+		    preparedSatementBankAccount.setString(2,password);
+		    preparedSatementBankAccount.setString(3,email);
+		    preparedSatementBankAccount.setInt(4,usertype);
+		    
+		    
+		    int updateStatus = preparedSatementBankAccount.executeUpdate();
+		    
+		    if(updateStatus !=1) {
+		    	throw new BusinessException("Database Query Failed ...");
+		    
+		    }
+		    
+		    status = 1;
+		
+    	
+	
+
+	    }catch(ClassNotFoundException|SQLException e) {
+    		
+		    logger.trace(e.getMessage());
+    		throw new BusinessException("Parameters are missing  ...\nPlease contact Admin ...");
+       }	
+	
+		
+
+		return status;
+	}
 		
 		
 }		

@@ -1,10 +1,12 @@
 package com.bankapplication.dao;
 
+import java.sql.ResultSet;
 import java.util.List;
 
 
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.RegisterModel;
+import com.bankapplication.model.account.AccountTransaction;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.model.customer.CustomerInfo;
 
@@ -50,7 +52,11 @@ public interface BankServicesDAOInterface {
 	
 	public BankAccountRegister transferAmount(int sendingAccountNumber,int receivingAccountNumber, double transferAmount) throws BusinessException;
 	
+	public  List<AccountTransaction> getAllTransactionsByAccountNumber(int accountNumber) throws BusinessException;
 	
+	public int updateBankAccountStatus(int accountNumber, int accountStatus) throws BusinessException;
+	
+	public int createEmployeeUserProfile(String username, String password, String email, int usertype) throws BusinessException;
 	
 	
 

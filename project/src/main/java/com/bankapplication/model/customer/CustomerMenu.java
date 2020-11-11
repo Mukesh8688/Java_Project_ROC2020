@@ -159,7 +159,7 @@ public class CustomerMenu {
 						   if(success == 1) {
 							  
 							   logger.fatal("Your bank transaction successfully done ....");
-							   logger.fatal("See You Again ...");
+							
 						   }
 					
 							

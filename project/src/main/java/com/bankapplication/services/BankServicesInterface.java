@@ -31,6 +31,12 @@ public interface BankServicesInterface {
 	public boolean verifyBankAccountRequirements(BankAccountRegister bankAccountRegister) throws BusinessException;
 	
 	public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) throws BusinessException;
+	
+	public void getAllTransactionByAccountNumber(int accountNumber) throws BusinessException;
+	
+	public int changeBankAccountStatus(int accountNumber) throws BusinessException;
+	
+	public int createEmployeeUserProfile(String username, String password , String email, int usertype) throws BusinessException;
 
 	
 }
