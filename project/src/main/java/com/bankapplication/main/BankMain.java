@@ -18,8 +18,8 @@ public class BankMain {
 		
 		
 		System.out.println();
-		System.out.println("Welcome Bank Application Version 1.0");
-		System.out.println("====================================");
+		System.out.println("Welcome Mukesh's Bank Application Version 1.0");
+		System.out.println("==============================================");
 		
 		
 	    int mainMenuChoice = 0; 
@@ -27,11 +27,12 @@ public class BankMain {
 		do {
 			System.out.println();
 	        System.out.println(" **** MAIN MENU **** ");		
-		    System.out.println();		
-		    System.out.println("1) Log In ");
-		    System.out.println("2) Sign Up ");
+		    System.out.println("================================");	
+		    System.out.println("1) Log in ");
+		    System.out.println("2) Sign up ");
 		    System.out.println("3) Admin");
 		    System.out.println("4) EXIT");
+		    System.out.println("================================");
 		    System.out.println("Please enter appropriate choice(1-4) :) ");
 		
 		 
@@ -40,7 +41,7 @@ public class BankMain {
 		    	mainMenuChoice = Integer.parseInt(scanner.nextLine());
 		    }catch(NumberFormatException e) {
 		    	System.out.println();
-		    	System.out.println("You didn't choose any option !!!");
+		    	System.out.println("You didn't choose any option !!! ...");
 		    	mainMenuChoice = 0;
 		    }
 		
@@ -78,7 +79,7 @@ public class BankMain {
 				  } catch (BusinessException e) {
 					  
 					  System.out.println();
-					  System.out.println(" REGISTRATIOM FAIL !!! ");
+					  System.out.println(" REGISTRATIOM FAIL !!! ... ");
 					  System.out.println(e.getMessage());
 					  System.out.println();
 					
@@ -96,7 +97,7 @@ public class BankMain {
 		    	   System.out.println();
 		    	   System.out.println("==== Warning !!! This option is for admin User only =====");
 		    	   System.out.println();
-				   System.out.println("If you are not admin user . Please type 8 to exit this section == OR == Enter any Number to continue ...");
+				   System.out.println("If you are not admin user ... \n Please type 8 to exit this section ... \n OR Enter any Number to continue ...");
 				   
 		           int admin = 0;
 		           
@@ -109,7 +110,7 @@ public class BankMain {
 		           if(admin !=8) {
 		        	   
 		        	   System.out.println();
-		        	   System.out.println("THANK YOU for your interest .... under CONSTRUCTION ....");
+		        	   System.out.println("THANK YOU for your interest ... \n under CONSTRUCTION ....");
 		        	   
 		           }else {
 		        	   
@@ -129,7 +130,7 @@ public class BankMain {
 	
 			default:
 				System.out.println();
-				System.out.println("Please Choose Right option ... Or Type 4 for Exit Application ");
+				System.out.println("Please Choose Right option ... \nOr type 4 to exit from Application ... \n===THANK YOU===");
 				break;
 			}
 

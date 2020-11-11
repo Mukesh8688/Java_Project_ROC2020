@@ -25,10 +25,17 @@ public class LogInModel {
     private static RegisterModel registermodel = new RegisterModel();
     
     
-    /* Method to invoke username */
+    /* Method to get  username */
     
-    public static String username ;
-	 
+    public static String usernamePara = "";
+	
+    public static String getUsername() {
+    	
+    	usernamePara = registermodel.getUsername();
+    	
+		return usernamePara;
+    
+    }
      
 	 
 	 /*
@@ -50,10 +57,10 @@ public class LogInModel {
 					if(bankServicies.isVerifyUsernamePassword(registermodel.getUsername(), registermodel.getPassword())) {
 						   
 						   System.out.println();
-					       System.out.println("You Logged in  Successfully !!");
+					       System.out.println("You Logged in  Successfully !! ...");
 					       System.out.println();
 						
-						   int menuUsertype = bankServicies.isVarifyUsertype(registermodel.getUsername(), registermodel.getPassword());
+						   int menuUsertype = bankServicies.getUserType(registermodel.getUsername());
 						   
 						   
 						   
@@ -101,7 +108,7 @@ public class LogInModel {
 								
 						   default:
 							   
-							    System.out.println("Sorry!!!  Username and Password doesn't Exist ... Please Try Again...\n"
+							    System.out.println("Sorry!!!  Username and Password doesn't match ... Please Try Again...\n"
 								   		+ "OR... Please Contanct Bank Employee !!! \n"
 								   		+ "THANK YOU");
 							   

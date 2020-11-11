@@ -9,12 +9,15 @@ import org.apache.log4j.Logger;
 import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
+import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.RegisterModel;
 import com.bankapplication.model.account.BankAccountRegister;
 
 public class CustomerInfo {
 	
+	// DAO 
 	
+	private static BankServicesDAOInterface getbankuserid = new BankServicesDAOImpl();
 	
 	//log4j
 		private static Logger logger = Logger.getLogger(BankAccountRegister.class);
@@ -33,7 +36,7 @@ public class CustomerInfo {
 	private String state;
 	private String zipCode;
 	private String phoneNumber;
-	private long SSN;
+	private String SSN;
 	private Date joinDate;
 	private int customerRegisterId;
 	
@@ -44,7 +47,7 @@ public class CustomerInfo {
 	}
 
 	public CustomerInfo(int customerId,String firstName, String lastName, String addressStreetName, String city, String state,
-			String zipCode, String phoneNumber, long sSN, Date joinDate, int customerRegisterId) {
+			String zipCode, String phoneNumber, String SSN, Date joinDate, int customerRegisterId) {
 
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -53,7 +56,7 @@ public class CustomerInfo {
 		this.state = state;
 		this.zipCode = zipCode;
 		this.phoneNumber = phoneNumber;
-		this.SSN = sSN;
+		this.SSN = SSN;
 		this.joinDate = joinDate;
 		this.customerRegisterId = customerRegisterId;
 	}
@@ -118,11 +121,11 @@ public class CustomerInfo {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public long getSSN() {
+	public String getSSN() {
 		return SSN;
 	}
 
-	public void setSSN(long ssn) {
+	public void setSSN(String ssn) {
 		this.SSN = ssn;
 	}
 
@@ -160,7 +163,7 @@ public class CustomerInfo {
 	
 
 		
-	public void askCustomerDetail() {
+	public void askCustomerDetail() throws BusinessException {
 			
 			logger.fatal("Entere First Name :");
 			setFirstName(scanner.nextLine().toLowerCase());
@@ -186,40 +189,35 @@ public class CustomerInfo {
 			setPhoneNumber(scanner.nextLine().toLowerCase());
 			logger.trace("City:" + getPhoneNumber());
 			
-			logger.fatal("Please Enter 10 digit Social Security Number(SSN) : ");
-			setSSN(Long.parseLong(scanner.nextLine()));
+			logger.fatal("Please 9 digit Social Security Number(SSN): ");
+			setSSN(scanner.nextLine());
 			logger.trace("City:" + getSSN());
 			
 			//Taking  java.util Date 
-		    setJoinDate(new Date());
+			setJoinDate(new java.util.Date());
 			logger.trace("JoiningDate:" + getJoinDate()); 
+	
 			
 			
+			/* invoked customer Register Id*/
+			int customerRegisterId = 0;
 			
-			
+			customerRegisterId = getbankuserid.getUserId(LogInModel.getUsername());
 		
-			// customerREgister id is taken for register database 
-			// under construction
-			
-			/*
-			BankServicesDAOInterface getbankuserid = new BankServicesDAOImpl();
-			try {
-				getbankuserid.getUserRegisterDetail(new RegisterModel().getUsername(),new RegisterModel().getPassword());
-			} catch (BusinessException e) {
-				e.printStackTrace();
+			if(customerRegisterId != 0) {
+			    setCustomerRegisterId(customerRegisterId);
+			}else {
+				throw new BusinessException(" Customer must be registered  before  open Account !!! \n"
+						+ "please contact local Agent Or please Sign Up \n"
+						+ "THANK YOU");
 			}
-			
-			try {
-				setCustomerRegisterId(getbankuserid.getUserRegisterDetail(new RegisterModel().getUsername(),new RegisterModel().getPassword()).get(0).getId());
-			} catch (BusinessException e) {
-				e.printStackTrace();
-			}
-			*/
-			
-			setCustomerRegisterId(1);
-			logger.trace("Customer_RegisterId:" + getCustomerRegisterId());
+			logger.trace("Customer_RegisterId:" + customerRegisterId);
 			
 			
+			
+			logger.fatal("Enter ZipCode :");
+			setZipCode(scanner.nextLine());
+			logger.trace("ZipCode:" + getZipCode()); 
 			
 				
 			////

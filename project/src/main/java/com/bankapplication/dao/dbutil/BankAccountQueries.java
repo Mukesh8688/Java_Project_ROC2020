@@ -2,36 +2,64 @@ package com.bankapplication.dao.dbutil;
 
 public class BankAccountQueries {
 	
-	public static String registerUsernameEmployee = "INSERT INTO project_schema.bankApp_register\n"
+	public static String REGISTER_USER = "INSERT INTO project_schema.bankApp_register\n"
 			+ "(username,password, email,usertype)\n"
 			+ "VALUES(?, ?, ?,?);" ;
 	
 	
-	public static String isValide = "SELECT id,username,password,email,usertype from project_schema.bankApp_register\n"
+	public static String GET_ALL_REGISTERS_BY_USERNAMEPASSWORD = "SELECT id,username,password,email,usertype from project_schema.bankApp_register\n"
 			     + "WHERE username = ? and password = ?";
 	
 	
-	public static String isUserType = "SELECT usertype from project_schema.bankApp_register\n"
-		     + "WHERE username = ? and password = ?";
+	public static String GET_USERTYPE_USERID_BY_USERNAME = "SELECT id , usertype from project_schema.bankApp_register\n"
+		     + "WHERE username = ? ; ";
 	
-	public static String isVerifyUsername = "SELECT username, email from project_schema.bankApp_register ;" ;
+	public static String GET_ALL_REGISTERS  = "SELECT username, email from project_schema.bankApp_register ;" ;
+	
+	
+	public static String GET_ALL_REGISTERS_BY_USERNAME  = "SELECT id,username,password,email,usertype from project_schema.bankApp_register\n"
+			+ "WHERE username = ? ;" ;
+	
+	
+	public static String GET_CUSTOMERID_BY_USERID = "SELECT customerid\n"
+			+ "FROM project_schema.bank_customers WHERE customer_registerid = ? ;";
 	
 	
 	
-	public static String insertBankAccount = "INSERT INTO project_schema.bank_account\n"
+	public static String INSERT_BANK_ACCOUNT = "INSERT INTO project_schema.bank_account\n"
 			+ "(balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, accounttype, branchloc)\n"
 			+ "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?);" ;
 	
 	
-	public static String insertCustomerInfo = "INSERT INTO project_schema.bank_customers\n"
+	public static String INSERT_BANK_CUSTOMER = "INSERT INTO project_schema.bank_customers\n"
 			+ "(firstname, lastname, address, city, state, phonenumber, ssn, joindate, customer_registerid, zipcode)\n"
 			+ "VALUES(?,?,?,?,?,?,?,?,?,?);";
 			
 	
 	
-	public static String insertTranactions = "INSERT INTO project_schema.bank_transactions\n"
+	public static String INSERT_BANK_TRANSACTION = "INSERT INTO project_schema.bank_transactions\n"
 			+ "(trans_type, amount, account_accountnumber, total_balance, transactiondate)\n"
-			+ "VALUES(?, ?, ?, ?, ?,?);";
+			+ "VALUES(?, ?, ?, ?,?);";
 	
+	
+	public static String GET_ACCOUNT_BALACNE = "SELECT balance FROM project_schema.bank_account WHERE accountnumber = ? ;";
+	
+	
+	public static String GET_ACC_BALANCE_BY_ACC_NUM = "SELECT balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, accounttype, branchloc\n"
+			+ "FROM project_schema.bank_account\n"
+			+ "WHERE accountnumber = ? ; ";
+	
+	public static String GET_ACC_BALANCE_BY_USERID = "SELECT accountnumber,balance, openingbalance, accountname, dateopened, interest, account_status, accounttype, branchloc\n"
+			+"FROM project_schema.bank_account\n"
+			+ "WHERE customers_customerid  = ? ;";
+	
+	
+	public static String GET_ALLACC_BY_CUSTOMERID_ACCOUNTTYPE = "SELECT accountnumber,balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, branchloc\n"
+			+ "FROM project_schema.bank_account\n"
+			+ "WHERE customers_customerid  = ? and accounttype = ? ; ";
+	
+	
+	public static String UPDATE_BANKACC_BY_TRANSACTIONTYPE = "UPDATE project_schema.bank_account\n"
+			+ "SET balance= ? WHERE accountnumber= ? ;";
 
 }

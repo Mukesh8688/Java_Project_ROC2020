@@ -373,3 +373,715 @@
 11-09-2020 Monday CST 08:56:06.671   [main] FATAL com.bankapplication.model.account.BankAccountRegister:189 - Please Enter 10 digit Social Security Number(SSN) : 
 11-09-2020 Monday CST 08:56:09.208   [main] FATAL com.bankapplication.model.account.BankAccountRegister:272 - Entere Your Opening Balance Amount : $
 11-09-2020 Monday CST 08:56:11.975   [main] FATAL com.bankapplication.model.customer.CustomerMenu:104 - You opened Bank Account Succefully!
+11-09-2020 Monday CST 09:35:37.066   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 09:35:39.358   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 12:19:40.396   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 12:19:42.184   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 12:20:27.071   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 12:20:27.072   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 12:20:27.072   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 12:20:32.144   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 12:20:32.145   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 12:20:36.380   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 12:20:38.195   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 12:20:54.537   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 12:20:58.063   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 12:20:59.805   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 12:21:03.491   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please Enter 10 digit Social Security Number(SSN) : 
+11-09-2020 Monday CST 12:22:46.162   [main] FATAL com.bankapplication.model.account.BankAccountRegister:284 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 12:23:13.725   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 12:23:15.182   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 12:24:04.660   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 12:24:07.746   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 12:24:13.813   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 12:24:13.814   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 12:24:13.814   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 12:24:15.454   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 12:24:15.455   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 12:24:21.412   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 12:24:22.396   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 12:24:23.317   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 12:24:24.362   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 12:24:25.320   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 12:24:30.994   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 12:26:21.683   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 12:26:24.338   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 12:26:40.740   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 12:26:40.740   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 12:26:40.741   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 12:26:42.510   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 12:26:42.511   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 12:26:45.261   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 12:26:46.944   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 12:26:51.375   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 12:26:53.608   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 12:26:55.020   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 12:26:57.163   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 12:26:59.994   [main] FATAL com.bankapplication.model.account.BankAccountRegister:284 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 12:27:03.597   [main] FATAL com.bankapplication.model.customer.CustomerMenu:110 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 12:27:17.484   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 12:27:24.544   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 12:27:31.098   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 12:27:31.098   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 12:27:31.098   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 12:27:32.576   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 12:27:32.578   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 12:27:34.383   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 12:27:35.171   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 12:27:36.010   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 12:27:36.794   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 12:27:37.652   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 12:27:41.457   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 12:29:00.659   [main] FATAL com.bankapplication.model.account.BankAccountRegister:284 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 12:30:57.121   [main] FATAL com.bankapplication.model.customer.CustomerMenu:110 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 13:07:03.815   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:07:05.885   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:08:44.718   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:08:44.718   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:08:44.718   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:08:54.833   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:08:54.833   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:08:57.147   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:09:01.445   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:09:03.821   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:09:04.815   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:09:05.809   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:09:10.374   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:09:38.025   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:10:46.810   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:10:50.912   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:11:50.531   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:11:50.532   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:11:50.533   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:11:52.708   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:11:52.709   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:11:55.869   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:11:57.804   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:11:59.495   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:12:00.350   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:12:01.216   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:12:06.776   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:12:32.755   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:14:45.904   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:14:49.304   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:14:58.589   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:14:58.595   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:14:58.601   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:15:49.318   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:15:49.320   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:15:53.655   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:15:54.867   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:15:55.967   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:15:56.776   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:15:57.506   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:15:59.634   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:16:01.849   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:18:58.899   [main] FATAL com.bankapplication.model.customer.CustomerMenu:108 - You opened Bank Account Succefully!
+11-09-2020 Monday CST 13:23:42.941   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:23:45.408   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:24:15.239   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:24:15.245   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:24:15.250   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:24:19.742   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:24:19.751   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:24:23.907   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:24:26.355   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:24:27.327   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:24:28.119   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:24:28.909   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:24:30.758   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:24:32.104   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:28:29.271   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:28:31.210   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:28:36.144   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:28:36.144   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:28:36.144   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:28:37.802   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:28:37.803   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:28:40.605   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:28:42.971   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:28:44.203   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:28:45.057   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:28:45.902   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:28:48.004   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:28:50.051   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:28:52.915   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 13:31:12.506   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:31:23.433   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:31:34.920   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:31:34.921   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:31:34.921   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:31:36.284   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:31:36.285   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:31:39.132   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:31:40.316   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:31:41.108   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:31:41.678   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:31:42.412   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:31:46.487   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:31:48.276   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:31:56.956   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 13:32:20.339   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:32:23.767   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:32:27.515   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:32:27.515   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:32:27.516   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:32:29.100   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:32:29.101   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:32:32.182   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:32:33.061   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:32:33.836   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:32:34.576   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:32:35.575   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:32:38.534   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:32:40.666   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:33:48.410   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:33:50.129   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:33:54.514   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:33:54.515   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:33:54.515   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:33:55.998   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:33:55.998   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:33:58.937   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:34:00.330   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:34:16.883   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:34:17.959   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:34:18.963   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:34:23.896   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:34:25.227   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:34:28.486   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 13:35:39.164   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:35:40.884   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:35:45.886   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:35:45.887   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:35:45.887   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:35:46.962   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:35:46.963   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:35:50.465   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:35:52.402   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:35:53.851   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:35:54.893   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:35:55.841   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:35:58.140   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:36:01.201   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:39:33.730   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:39:36.092   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:39:40.989   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:39:40.990   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:39:40.990   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:39:43.268   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:39:43.269   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:39:46.100   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:39:48.082   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:39:49.186   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:39:49.995   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:39:50.893   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:39:52.631   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:39:54.467   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 13:40:00.230   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:40:03.414   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 13:46:01.434   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:46:03.951   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:46:07.533   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:46:07.533   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:46:07.533   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:46:08.974   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:46:08.975   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:46:11.522   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:46:12.752   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:46:13.611   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:46:14.507   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:46:15.626   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:46:35.736   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:46:37.511   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 13:46:41.213   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 13:49:50.384   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 13:51:06.207   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 13:51:10.137   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 13:51:15.063   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 13:51:15.064   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 13:51:15.064   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 13:51:18.435   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 13:51:18.436   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 13:51:21.523   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 13:52:22.953   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 13:52:24.508   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 13:52:26.407   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 13:52:29.375   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 13:52:31.287   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 13:52:34.151   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 13:52:41.330   [main] FATAL com.bankapplication.model.account.BankAccountRegister:285 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 15:11:28.433   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 15:11:31.485   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 15:11:37.040   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 15:11:37.041   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 15:11:37.041   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 15:11:39.886   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 15:13:17.096   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 15:13:20.861   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 15:13:25.230   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 15:13:25.230   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 15:13:25.231   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 15:13:26.726   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 15:13:26.743   [main] FATAL com.bankapplication.model.account.BankAccountRegister:294 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 15:16:02.461   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 15:16:04.371   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 15:16:09.124   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 15:16:09.125   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 15:16:09.125   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 15:16:12.103   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 15:16:29.251   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 15:19:40.453   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 15:22:24.723   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 15:22:28.068   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 15:22:32.835   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 15:22:32.835   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 15:22:32.836   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 15:22:34.785   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 15:22:47.842   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please entere Opening Balance Amount : $
+11-09-2020 Monday CST 17:20:16.255   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 17:20:18.583   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 17:20:43.252   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 17:20:46.838   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 17:20:52.998   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 17:20:52.999   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 17:20:52.999   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 17:20:57.449   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 17:21:15.998   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 17:21:22.282   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 17:21:24.512   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 17:21:26.184   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 17:21:27.392   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 17:21:29.635   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 17:21:43.354   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 17:21:50.130   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 17:22:02.816   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 18:01:02.216   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 18:01:05.769   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 18:01:10.214   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 18:01:10.214   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 18:01:10.214   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 18:01:11.799   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 18:01:26.935   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 18:01:34.026   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 18:01:37.089   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 18:01:38.448   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 18:01:40.163   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 18:01:41.846   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 18:01:45.734   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 18:01:52.080   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 18:02:00.703   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 18:02:24.759   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:226 - Please enter phone Number in 10 digit only e.g 7734027577
+11-09-2020 Monday CST 18:02:24.767   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:252 - ZipCode should be 6 digit Number e.g 60660 
+11-09-2020 Monday CST 18:02:24.773   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:264 - SSN should be 9 digit Numbers e.g 367780591 
+11-09-2020 Monday CST 18:02:33.805   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 18:03:32.211   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 18:03:32.217   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 18:03:32.223   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 20:47:26.510   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 20:47:31.081   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 20:47:36.317   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 20:47:36.317   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 20:47:36.318   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 20:47:37.923   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 20:47:37.941   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 20:47:42.261   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 20:47:49.191   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 20:47:50.975   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 20:47:52.251   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 20:47:55.093   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 20:48:00.171   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 20:48:03.780   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 20:48:07.944   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 20:48:11.555   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:264 - SSN should be 9 digit Numbers e.g 367780591 
+11-09-2020 Monday CST 20:48:11.556   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 20:48:39.186   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 20:48:42.443   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 20:48:46.749   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 20:48:46.749   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 20:48:46.749   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 20:48:48.331   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 20:48:57.952   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 20:49:02.707   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 20:49:05.405   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 20:49:07.889   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 20:49:09.405   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 20:49:11.688   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 20:49:17.135   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 20:49:22.137   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 20:49:29.196   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 20:50:40.628   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:264 - SSN should be 9 digit Numbers e.g 367780591 
+11-09-2020 Monday CST 20:53:08.743   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 20:53:08.751   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 20:53:08.757   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 20:53:14.699   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 20:54:07.752   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 20:54:14.740   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 20:54:18.285   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 20:54:19.787   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 20:54:22.395   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 20:54:24.026   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 20:54:31.571   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 20:54:38.912   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 20:54:48.491   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 20:55:19.019   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:226 - Please enter phone Number in 10 digit only e.g 7734027577
+11-09-2020 Monday CST 20:55:19.029   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:252 - ZipCode should be 6 digit Number e.g 60660 
+11-09-2020 Monday CST 20:55:19.037   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:264 - SSN should be 9 digit Numbers e.g 367780591 
+11-09-2020 Monday CST 20:55:31.174   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!! Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 21:08:02.690   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:08:05.425   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:10:26.422   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:10:26.424   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:10:26.424   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:10:29.053   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:10:29.074   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:10:45.474   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 21:10:47.277   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 21:10:57.130   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 21:11:00.015   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 21:11:01.753   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 21:11:11.545   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 21:11:22.276   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 21:11:25.738   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 21:11:29.521   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:264 - SSN should be 9 digit Numbers e.g 367780591 
+11-09-2020 Monday CST 21:11:29.521   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!!Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 21:12:02.176   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:12:05.503   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:12:11.332   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:12:11.332   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:12:11.332   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:12:13.233   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:13:12.498   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:14:26.072   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:14:28.532   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:14:34.948   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:14:34.949   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:14:34.949   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:14:36.710   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:14:49.968   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:14:57.828   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 21:15:02.866   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 21:15:08.937   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 21:15:11.416   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 21:15:12.780   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 21:15:18.170   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 21:15:25.938   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 21:15:33.671   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 21:16:08.379   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:264 - SSN should be 9 digit Numbers e.g 367780591 
+11-09-2020 Monday CST 21:17:14.401   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:17:18.945   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:17:29.640   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:17:31.538   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:17:35.071   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:17:35.071   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:17:35.072   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:17:36.765   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:18:22.713   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:18:28.832   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 21:18:30.180   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 21:18:31.564   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 21:18:33.894   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 21:18:36.055   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 21:18:42.017   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 21:24:43.181   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:24:45.267   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:25:16.171   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:25:16.171   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:25:16.172   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:25:42.565   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:25:51.488   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:25:57.040   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 21:25:58.772   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 21:25:59.990   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 21:26:00.991   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 21:26:03.445   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 21:26:14.959   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 21:26:23.174   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 21:26:29.696   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 21:40:14.812   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 21:40:17.777   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 21:40:22.266   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:40:22.267   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:40:22.267   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:40:24.313   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:40:32.459   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:40:36.513   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 21:40:39.710   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 21:40:44.183   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 21:40:46.483   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 21:40:47.992   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 21:40:57.371   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 21:41:05.106   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 21:41:13.781   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 21:51:43.638   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!!Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 21:52:06.592   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 21:52:06.598   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 21:52:06.605   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 21:52:10.830   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 21:52:22.657   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 21:52:26.517   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 21:52:29.587   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 21:52:31.229   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 21:52:32.644   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 21:52:34.364   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 21:52:39.559   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 21:52:44.742   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 21:52:58.348   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 22:06:34.609   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 22:06:37.647   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 22:06:41.191   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 22:06:41.191   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 22:06:41.192   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 22:06:42.912   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 22:06:58.218   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 22:07:02.054   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 22:07:05.768   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 22:07:07.049   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 22:07:08.039   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 22:07:10.113   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 22:07:14.830   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 22:07:23.186   [main] FATAL com.bankapplication.model.account.BankAccountRegister:217 - Enter ZipCode :
+11-09-2020 Monday CST 22:07:32.177   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 22:14:58.622   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 22:15:00.905   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 22:15:04.825   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 22:15:04.825   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 22:15:04.826   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 22:15:06.261   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 22:15:06.278   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 22:15:10.476   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 22:15:12.160   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 22:15:13.316   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 22:15:14.329   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 22:15:15.967   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 22:15:22.069   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 22:15:28.597   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 22:15:30.867   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 22:15:33.687   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!!Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 22:17:19.472   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 22:17:21.443   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 22:17:25.409   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 22:17:25.410   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 22:17:25.410   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 22:17:27.034   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 22:17:27.053   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 22:17:29.685   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 22:17:30.604   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 22:17:31.607   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 22:17:33.820   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 22:17:36.498   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 22:17:48.267   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 22:17:53.511   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 22:17:56.383   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 22:18:00.740   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - Sorry !!!Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!
+11-09-2020 Monday CST 22:19:38.500   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 22:19:40.819   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 22:19:47.921   [main] FATAL com.bankapplication.model.account.BankAccountRegister:202 - Type 1 - Checking Account :
+11-09-2020 Monday CST 22:19:47.921   [main] FATAL com.bankapplication.model.account.BankAccountRegister:203 - Type 2 - Saving Account :
+11-09-2020 Monday CST 22:19:47.921   [main] FATAL com.bankapplication.model.account.BankAccountRegister:204 - Type 3 - EXIT 
+11-09-2020 Monday CST 22:19:49.483   [main] ERROR com.bankapplication.model.account.BankAccountRegister:218 - Accouttype:1
+11-09-2020 Monday CST 22:19:49.501   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-09-2020 Monday CST 22:19:53.560   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-09-2020 Monday CST 22:19:54.476   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-09-2020 Monday CST 22:19:55.229   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-09-2020 Monday CST 22:19:55.982   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-09-2020 Monday CST 22:19:57.769   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-09-2020 Monday CST 22:20:04.523   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-09-2020 Monday CST 22:20:09.595   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-09-2020 Monday CST 22:20:12.727   [main] FATAL com.bankapplication.model.account.BankAccountRegister:298 - Please enter Opening Balance Amount : $
+11-09-2020 Monday CST 22:23:56.184   [main] FATAL com.bankapplication.model.customer.CustomerMenu:107 - You opened Bank Account Succefully!
+11-09-2020 Monday CST 23:20:35.531   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 23:20:38.258   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 23:20:52.692   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-09-2020 Monday CST 23:25:13.046   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 23:25:15.415   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 23:25:33.526   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-09-2020 Monday CST 23:27:14.176   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 23:27:16.905   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 23:27:35.381   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-09-2020 Monday CST 23:30:14.894   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 23:31:22.447   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 23:31:36.858   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-09-2020 Monday CST 23:43:43.153   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 23:43:45.804   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 23:43:54.054   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-09-2020 Monday CST 23:45:21.452   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-09-2020 Monday CST 23:45:23.945   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-09-2020 Monday CST 23:45:38.850   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-09-2020 Monday CST 23:51:15.446   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:78 - Enter Account Number:
+11-10-2020 Tuesday CST 00:33:12.051   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 00:33:14.461   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 00:35:36.375   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 00:35:39.204   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 00:38:06.234   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 00:38:08.134   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 00:44:31.003   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 00:44:33.904   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 00:45:54.463   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 00:45:57.352   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 08:50:39.595   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 08:50:41.532   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 08:50:47.494   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 08:50:47.495   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 08:50:47.495   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 08:50:50.433   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 08:51:29.552   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 08:51:32.172   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 08:51:37.850   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 08:51:37.851   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 08:51:37.851   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 08:51:53.059   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 08:54:30.254   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 08:54:33.179   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 08:54:43.214   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 08:54:43.214   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 08:54:43.215   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 08:54:51.194   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 08:55:27.302   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:253 - Please enter Account Number from where You want withdraw :
+11-10-2020 Tuesday CST 08:55:55.561   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:259 - Please enter Amount what you want withdraw :
+11-10-2020 Tuesday CST 10:54:29.059   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 10:54:31.059   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 10:54:47.245   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 10:54:47.251   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 10:54:47.256   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 10:54:53.581   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 10:55:11.383   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:257 - Please enter right account number where You want to withdraw :
+11-10-2020 Tuesday CST 10:56:11.827   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:257 - It seems more than one account, Please enter right account number :
+11-10-2020 Tuesday CST 11:01:29.077   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:257 - It seems more than one account, Please enter account number :
+11-10-2020 Tuesday CST 11:01:49.922   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:273 - Please enter Amount what you want to withdraw :
+11-10-2020 Tuesday CST 11:03:38.267   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 11:03:45.181   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 11:04:29.596   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 11:04:33.055   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 11:04:48.469   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:04:48.470   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:04:48.472   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:04:51.352   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 11:04:51.369   [main] FATAL com.bankapplication.model.account.BankAccountRegister:168 - Entere First Name :
+11-10-2020 Tuesday CST 11:04:56.879   [main] FATAL com.bankapplication.model.account.BankAccountRegister:172 - Entere Surname Name :
+11-10-2020 Tuesday CST 11:05:03.555   [main] FATAL com.bankapplication.model.account.BankAccountRegister:176 - Address :
+11-10-2020 Tuesday CST 11:05:13.001   [main] FATAL com.bankapplication.model.account.BankAccountRegister:180 - City :
+11-10-2020 Tuesday CST 11:05:15.539   [main] FATAL com.bankapplication.model.account.BankAccountRegister:184 - State :
+11-10-2020 Tuesday CST 11:05:17.089   [main] FATAL com.bankapplication.model.account.BankAccountRegister:188 - PhoneNumber :
+11-10-2020 Tuesday CST 11:05:23.931   [main] FATAL com.bankapplication.model.account.BankAccountRegister:192 - Please 9 digit Social Security Number(SSN): 
+11-10-2020 Tuesday CST 11:05:32.129   [main] FATAL com.bankapplication.model.account.BankAccountRegister:218 - Enter ZipCode :
+11-10-2020 Tuesday CST 11:05:34.791   [main] FATAL com.bankapplication.model.account.BankAccountRegister:345 - Please enter Opening Balance Amount : $
+11-10-2020 Tuesday CST 11:06:33.043   [main] FATAL com.bankapplication.model.customer.CustomerMenu:109 - You opened Bank Account Succefully!
+11-10-2020 Tuesday CST 11:09:10.075   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:09:10.082   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:09:10.088   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:09:26.486   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 11:09:27.976   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:287 - Please enter Amount what you want withdraw :
+11-10-2020 Tuesday CST 11:11:27.026   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:11:27.033   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:11:27.039   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:11:31.929   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 11:11:33.407   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:287 - Please enter Amount what you want withdraw :
+11-10-2020 Tuesday CST 11:15:35.186   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:15:35.192   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:15:35.197   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:15:39.926   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 11:15:40.251   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:288 - Please enter Amount what you want withdraw :
+11-10-2020 Tuesday CST 11:19:14.926   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:19:14.932   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:19:14.938   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:19:26.743   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 11:19:32.501   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:288 - Please enter Amount what you want withdraw :
+11-10-2020 Tuesday CST 11:26:31.215   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:26:31.222   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:26:31.227   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:26:42.905   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:3
+11-10-2020 Tuesday CST 11:28:02.308   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:28:02.314   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:28:02.320   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:28:06.729   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:3
+11-10-2020 Tuesday CST 11:28:56.363   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:28:56.368   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:28:56.374   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:29:27.223   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:3
+11-10-2020 Tuesday CST 11:29:57.690   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:29:57.696   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:29:57.702   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:30:04.387   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:3
+11-10-2020 Tuesday CST 11:39:10.204   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 11:39:12.764   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 11:39:19.263   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 11:39:19.264   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 11:39:19.266   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 11:39:20.929   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:3
+11-10-2020 Tuesday CST 11:39:20.930   [main] FATAL com.bankapplication.model.customer.CustomerMenu:167 - Please Select Account Type ....
+Try Again !! ...
+11-10-2020 Tuesday CST 12:11:44.426   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 12:11:44.440   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 12:11:44.440   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 12:11:47.122   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:2
+11-10-2020 Tuesday CST 12:25:44.969   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:25:47.268   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:25:56.535   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 12:25:56.541   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 12:25:56.546   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 12:26:02.984   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:2
+11-10-2020 Tuesday CST 12:29:42.598   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:29:45.024   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:30:02.730   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 12:30:02.736   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 12:30:02.742   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 12:30:12.259   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:2
+11-10-2020 Tuesday CST 12:32:57.626   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:33:00.335   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:33:44.125   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:34:08.196   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:34:18.442   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 12:34:18.447   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 12:34:18.452   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 12:34:22.475   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:2
+11-10-2020 Tuesday CST 12:41:24.494   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:41:27.681   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:41:36.454   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:41:40.238   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:41:47.773   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 12:41:47.773   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 12:41:47.773   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 12:41:50.899   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:2
+11-10-2020 Tuesday CST 12:41:50.924   [main] FATAL com.bankapplication.model.customer.CustomerMenu:167 - Account haven't found ...
+Please create bank account with minimum balance...
+Please try again...
+11-10-2020 Tuesday CST 12:55:34.582   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:55:36.521   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:56:12.182   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 12:56:14.382   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 12:56:21.787   [main] FATAL com.bankapplication.model.customer.CustomerMenu:215 - How much would you like to transfer ? : $
+11-10-2020 Tuesday CST 12:57:21.264   [main] FATAL com.bankapplication.model.account.BankAccountRegister:224 - Type 1 - Checking Account :
+11-10-2020 Tuesday CST 12:57:21.264   [main] FATAL com.bankapplication.model.account.BankAccountRegister:225 - Type 2 - Saving Account :
+11-10-2020 Tuesday CST 12:57:21.265   [main] FATAL com.bankapplication.model.account.BankAccountRegister:226 - Type 3 - EXIT 
+11-10-2020 Tuesday CST 12:57:37.419   [main] ERROR com.bankapplication.model.account.BankAccountRegister:240 - Accouttype:1
+11-10-2020 Tuesday CST 13:51:18.914   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 13:51:21.063   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 13:51:26.954   [main] FATAL com.bankapplication.model.account.BankAccountRegister:85 - How much would you like to transfer ? : $
+11-10-2020 Tuesday CST 13:51:34.149   [main] FATAL com.bankapplication.model.account.BankAccountRegister:87 - Please enter account number from where you want to transfer: 
+11-10-2020 Tuesday CST 13:51:54.955   [main] FATAL com.bankapplication.model.account.BankAccountRegister:90 - Please enter account number where you want to transfer: 
+11-10-2020 Tuesday CST 13:52:15.943   [main] FATAL com.bankapplication.model.account.BankAccountRegister:113 - Account Number Doesn't Exit !!!... 
+ Please Contact Bank Staff... 
+===THANK YOU===
+11-10-2020 Tuesday CST 13:53:20.150   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 13:53:23.546   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 13:53:37.545   [main] FATAL com.bankapplication.model.account.BankAccountRegister:85 - How much would you like to transfer ? : $
+11-10-2020 Tuesday CST 13:53:43.899   [main] FATAL com.bankapplication.model.account.BankAccountRegister:87 - Please enter account number from where you want to transfer: 
+11-10-2020 Tuesday CST 13:53:51.963   [main] FATAL com.bankapplication.model.account.BankAccountRegister:90 - Please enter account number where you want to transfer: 
+11-10-2020 Tuesday CST 14:14:13.877   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 14:14:15.901   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 14:14:23.214   [main] FATAL com.bankapplication.model.account.BankAccountRegister:85 - How much would you like to transfer ? : $
+11-10-2020 Tuesday CST 14:14:28.033   [main] FATAL com.bankapplication.model.account.BankAccountRegister:87 - Please enter account number from where you want to transfer: 
+11-10-2020 Tuesday CST 14:14:40.656   [main] FATAL com.bankapplication.model.account.BankAccountRegister:90 - Please enter account number where you want to transfer: 
+11-10-2020 Tuesday CST 14:17:08.110   [main] FATAL com.bankapplication.model.account.BankAccountRegister:110 - New Saving Account Balance :$ 980.0
+11-10-2020 Tuesday CST 14:18:17.983   [main] FATAL com.bankapplication.model.customer.CustomerMenu:234 - Balance Tranfer Succefully Done ...
+11-10-2020 Tuesday CST 15:08:00.890   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 15:08:14.346   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 15:08:23.797   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:108 - Enter Account Number:
+11-10-2020 Tuesday CST 15:10:29.853   [main] FATAL com.bankapplication.model.customer.CustomerMenu:120 - <<=== You are Exit of Employee Menu ===>
+11-10-2020 Tuesday CST 15:11:09.549   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 15:11:11.826   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 15:11:19.170   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:108 - Enter Account Number:
+11-10-2020 Tuesday CST 15:13:40.382   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
+11-10-2020 Tuesday CST 15:13:43.237   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-10-2020 Tuesday CST 15:14:15.138   [main] FATAL com.bankapplication.model.customer.CustomerViewAccBalance:108 - Enter Account Number:

@@ -2,9 +2,29 @@ package com.bankapplication.model.employee;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
+import com.bankapplication.exception.BusinessException;
+import com.bankapplication.model.customer.CustomerMenu;
+import com.bankapplication.model.customer.CustomerViewAccBalance;
+import com.bankapplication.services.BankServicesInterface;
+import com.bankapplication.services.impl.BankSerciesInterfaceImpl;
+
 public class EmployeeMenu {
 	
-	private Scanner scanner = new Scanner(System.in);
+	/* create Bank Services Interface object to access bank services */
+	
+	private static BankServicesInterface bankServicesInterface = new BankSerciesInterfaceImpl();
+
+	
+	private Scanner scanner = new Scanner(System.in);	
+	
+	/* create object for log4j */
+	
+	private static Logger logger = Logger.getLogger(CustomerMenu.class);
+	
+
+	
 	
 	public EmployeeMenu() {
 
@@ -48,11 +68,18 @@ public class EmployeeMenu {
 					
 				
 				 case 1:
-					 // View Customer Account
-					 System.out.println("Thank You for interesting ... This option still Under CONSTRUCTION !!!");
-						   
-						 // Creating Bank Account
-										
+			            
+					 
+					 CustomerViewAccBalance customerviewAccBalance = new CustomerViewAccBalance();
+					 int byAccViewChoice = 0;
+					 
+					 try {
+						byAccViewChoice = customerviewAccBalance.askAccoutParametersByEmployee();
+						bankServicesInterface.getAllAccountInfoByEmployee(byAccViewChoice, customerviewAccBalance.getAccountNumber());
+						
+					} catch (BusinessException e) {
+						logger.fatal(e.getMessage());
+					}					
 								
 				     break;
 			      
@@ -89,7 +116,10 @@ public class EmployeeMenu {
 				 case 4:
 							 
 				
-					 // System.out.println("Thank You for interesting ... This option still Under CONSTRUCTION !!!");
+					 // EXIT from Employee  Menu		
+					 System.out.println("\n");
+					logger.fatal("<<=== You are Exit of Employee Menu ===>");
+					 System.out.println("<<<== THANK YOU ==>>");
 					
 					
 				    break;	 
@@ -104,8 +134,7 @@ public class EmployeeMenu {
 					 System.out.println("SORRY !!! .. This is INVALIDE choice Menu Number !!");
 					
 					 System.out.println();
-					
-					 System.out.println("PLEASE reenter right choice number ...  Thank YOU");
+				
 										
 							
 					 break;

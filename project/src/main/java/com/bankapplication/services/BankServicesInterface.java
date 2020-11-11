@@ -3,7 +3,9 @@ package com.bankapplication.services;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.account.BankAccount;
 import com.bankapplication.model.account.BankAccountRegister;
+import com.bankapplication.model.customer.BalanceTranfer;
 import com.bankapplication.model.customer.CustomerInfo;
+import com.bankapplication.model.customer.CustomerViewAccBalance;
 
 public interface BankServicesInterface {
 	
@@ -11,20 +13,24 @@ public interface BankServicesInterface {
 	
 	public boolean isVerifyUsernamePassword(String username,String password) throws BusinessException;
 	
-	public int isVarifyUsertype(String username,String password) throws BusinessException;
+	public int getUserType(String username) throws BusinessException;
 	
 	public boolean applyNewBankAcoount(CustomerInfo customerinfo,BankAccountRegister bankAccountRegister) throws BusinessException;
 	
-	public boolean viewAccountBalance(BankAccount bankAccount) throws BusinessException;
+	public void viewAccountBalance(CustomerViewAccBalance customerViewAccBalance, int choice ) throws BusinessException;
 	
-	public boolean withdraw(BankAccount bankAccount) throws BusinessException;
-	
-	public boolean deposit(BankAccount bankAccount) throws BusinessException;
-	
-	public boolean balanceTranfer(BankAccount bankAccount) throws BusinessException;
+	public int bankTransaction(int accountTypeChoice,int transactionType) throws BusinessException;
 	
 	
-	public boolean verifyAccountRequirements(CustomerInfo customerinfo,BankAccountRegister bankAccountRegister) throws BusinessException;
+	
+	public int balanceTranfer(BalanceTranfer balancetransfer) throws BusinessException;
+	
+	
+	public boolean verifyBankAccountRequirements(CustomerInfo customerinfo) throws BusinessException;
+	
+	public boolean verifyBankAccountRequirements(BankAccountRegister bankAccountRegister) throws BusinessException;
+	
+	public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) throws BusinessException;
 
 	
 }

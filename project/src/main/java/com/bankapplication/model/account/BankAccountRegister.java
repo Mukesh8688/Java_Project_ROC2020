@@ -9,11 +9,19 @@ import java.time.LocalDate;
 import org.apache.log4j.Logger;
 import org.apache.log4j.spi.TriggeringEventEvaluator;
 
+import com.bankapplication.dao.BankServicesDAOInterface;
+import com.bankapplication.dao.impl.BankServicesDAOImpl;
+import com.bankapplication.exception.BusinessException;
+import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.customer.CustomerInfo;
 
 
 
 public class BankAccountRegister {
+	
+	// Create DAO  Object for verify userid , customerid 
+	
+	private static BankServicesDAOInterface  bankServiceDAO = new BankServicesDAOImpl();
 	
 	/* Setting Date Format MM-dd-yyyy ( Month-days- year) */
 	private static SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
@@ -38,7 +46,9 @@ public class BankAccountRegister {
 	private int accountStatus;
 	private int accountType;
 	private String branchLoc;
+
 	
+	// Constructor
 	
 	public  BankAccountRegister() {
 		
@@ -46,18 +56,39 @@ public class BankAccountRegister {
 	
 	
 	
+
+	public BankAccountRegister(int customerAccountNum, double balance, double openingBalance, String accountName,
+			int customerId, Date dateOpened, double interest, int accountStatus, int accountType, String branchLoc) {
+		this.customerAccountNum = customerAccountNum;
+		this.balance = balance;
+		this.openingBalance = openingBalance;
+		this.accountName = accountName;
+		this.customerId = customerId;
+		this.dateOpened = dateOpened;
+		this.interest = interest;
+		this.accountStatus = accountStatus;
+		this.accountType = accountType;
+		this.branchLoc = branchLoc;
+	}
 	
+
+
+
+
+
+
+
 	public int getCustomerAccountNum() {
 		return customerAccountNum;
 	}
 
 
    
-	/* Database gives Auto Unique AccountNumber */
+	
 
-//	public void setCustomerAccountNum(int customerAccountNum) {
-//		this.customerAccountNum = customerAccountNum;
-//	}
+	public void setCustomerAccountNum(int customerAccountNum) {
+		this.customerAccountNum = customerAccountNum;
+	}
 
 
 
@@ -110,12 +141,10 @@ public class BankAccountRegister {
 
 
    
-	/* it's retrieved from customer info account */
-
-//	public void setCustomerId(int customerId) {
-//		this.customerId = customerId;
-//	}
-
+	
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
 
 
 
@@ -191,9 +220,11 @@ public class BankAccountRegister {
 	public void askAccountType() {
 		 System.out.println();
 		 System.out.println("Select the Account What you want !!!");
+		 System.out.println("====================================");
 		 logger.fatal("Type 1 - Checking Account :");
 		 logger.fatal("Type 2 - Saving Account :");
 		 logger.fatal("Type 3 - EXIT ");
+		 System.out.println("=====================================");
 		 
 		 System.out.println();
 		// System.out.println("**** NOTE *** By Default it takes Checking Account****");	   
@@ -218,12 +249,36 @@ public class BankAccountRegister {
 	
 	
 	
+	public int getAccountTypeChoice() throws BusinessException{
+		
+		
+		int accountTypeChoice = 0;
+		
+		askAccountType() ;
+		
+		accountTypeChoice = verifyAccountType();
 	
+		logger.trace("AccoutTypeChoice:" + accountTypeChoice);
+				
+		/* asking customer personal information */
+				
+		if(accountTypeChoice == 1) {
+			System.out.println("Welcome to Checking Account");
+			System.out.println("-----------------------------");
+		
+		}else if(accountTypeChoice == 2) {
+			System.out.println("Welcome to Saving Account");
+			System.out.println("-----------------------------");		
+		}else {
+			throw new BusinessException("Account Type  doesn't match ....\nTry Again !! ...");
+		}
+		
+		return accountTypeChoice;
+	}
 	
 
-	public void askBankAccountDetail(CustomerInfo customerinfo) {
+	public void askBankAccountDetail(CustomerInfo customerinfo) throws BusinessException{
 		
-		//boolean isVarifyAccount = false;
 		
 		/* 
 		 * Account Number inserted by Auto increatement by Database
@@ -249,9 +304,13 @@ public class BankAccountRegister {
 				/* asking customer personal information */
 						
 				if(accoutType == 1) {
+					System.out.println("Welcome to Checking Account");
+					System.out.println("-----------------------------");
 					setAccountName("Checking Account");
 					setInterest(0.1);
 				}else if(accoutType == 2) {
+					System.out.println("Welcome to Saving Account");
+					System.out.println("-----------------------------");
 					setAccountName("Saving Account");
 					setInterest(2);
 							
@@ -263,13 +322,27 @@ public class BankAccountRegister {
 						
 						
 				/* Asking Customer personal information */
-				customerinfo.askCustomerDetail();
+				try {
+					
+ 		    	    int userId = bankServiceDAO.getUserId(LogInModel.getUsername());
+					int customerId = bankServiceDAO.getCustomerId(userId);
+					
+					if(customerId == 0 ) {
+						System.out.println("Please enter all required information ");
+						System.out.println("--------------------------------------");
+						System.out.println();
+					    customerinfo.askCustomerDetail();
+					}
+					
+				} catch (BusinessException e) {
+					e.printStackTrace();
+				}
 						
 						
 						
 				/* setting balance and opening balance */
 						
-				logger.fatal("Entere Your Opening Balance Amount : $");
+				logger.fatal("Please enter Opening Balance Amount : $");
 				double openingBalance = Double.parseDouble(scanner.nextLine());
 				if(openingBalance > 0) {
 				    setBalance(openingBalance);
@@ -278,7 +351,7 @@ public class BankAccountRegister {
 					logger.trace("Balance :$" + getBalance() );
 				}else {
 							
-					System.out.println("Negetive Amount not allow to open Bank Account !!");
+					System.out.println("Negetive Amount isn't allowed to open Bank Account !! ...");
 					setBalance(0);
 					setOpeningBalance(0);
 				}
@@ -286,7 +359,7 @@ public class BankAccountRegister {
 						
 				// opended Date
 						
-				setDateOpened(new Date());
+				//setDateOpened(new Date());
 						
 						
 			   /*
@@ -304,12 +377,35 @@ public class BankAccountRegister {
 				 * format State and Number(4 digit)  e.g  IL0001
 				 */
 						
-						setBranchLoc("IL0001");
+				setBranchLoc("IL0001");
+						
+						
+			    /* retrieving customer id 
+			     * 			
+			     */
+			
+//			    	int userId = bankServiceDAO.getUserId(LogInModel.getUsername());
+//					int customerId = bankServiceDAO.getCustomerId(userId);
+//					
+//	                if(customerId != 0) {
+//						setCustomerId(customerId);
+//					}else {
+//						
+//						throw new BusinessException("Bank Account cann't created without Customer ID and User ID \n "
+//								+ "Please Sign Up first \n"
+//								+ "THANK YOU");
+//					    	
+//					}
+			    	
+			 
+				
+						
+						
 						
 		}else {
 			
-			System.out.println("Sorry !!!  You didn't Choose any Account Type !!! ");
-			System.out.println("...Please Type Again...");
+			System.out.println("Sorry !!! You didn't Choose any Account Type !!! ... ");
+			System.out.println("Please Type Again...");
 			System.out.println();
 		}
 					
@@ -317,14 +413,35 @@ public class BankAccountRegister {
 	
 	
 	
+	public void displayAccountDeatails() {
+		
+		System.out.println();
+		System.out.println("Account Details of : " + getCustomerAccountNum() );
+		System.out.println("-----------------------------");
+		System.out.println("Account Number : " + getCustomerAccountNum() );
+		System.out.println("Account Name : " + getAccountName() );
+		System.out.println("Account Balance: $" + getBalance());
+		logger.trace(getCustomerAccountNum());
+		logger.trace(getAccountName());
+		logger.trace(getBalance());
+		System.out.println("-----------------------------");
+		
+	}
+   
 	
+	
+
+
+
 	@Override
 	public String toString() {
-		return "BankAccountRegister [customerAccountNum=" + customerAccountNum + ", balance=" + balance
-				+ ", openingBalance=" + openingBalance + ", accountName=" + accountName + ", customerId=" + customerId
-				+ ", dateOpened=" + dateOpened + ", interest=" + interest + ", accountStatus=" + accountStatus
-				+ ", accountType=" + accountType + ", branchLoc=" + branchLoc + "]";
+		return "[Customer Account Number =" + customerAccountNum + ", Balance=$" + balance
+				+ ", Opening Balance=$" + openingBalance + ", Account Name=" + accountName + ", Customer Id =" + customerId
+				+ ", DateOpened=" + dateOpened + ", Interest=" + interest + ", Account Status=" + accountStatus
+				+ ", Account Type=" + accountType + ", Branch Location =" + branchLoc + "]";
 	}
+	
+
 
 
 
