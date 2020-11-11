@@ -1174,3 +1174,8 @@ Please try again ...
 11-10-2020 Tuesday CST 22:51:02.501   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
 11-10-2020 Tuesday CST 22:51:44.697   [main] FATAL com.bankapplication.model.RegisterModel:112 - Please Enter Username:
 11-10-2020 Tuesday CST 22:51:46.797   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
+11-11-2020 Wednesday CST 08:40:13.750   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 08:40:46.493   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 08:41:25.789   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 09:24:16.767   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 09:25:37.532   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577

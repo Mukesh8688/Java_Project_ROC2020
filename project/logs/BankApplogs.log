@@ -2298,3 +2298,13 @@ Please try again ...
 11-10-2020 Tuesday CST 22:51:46.796   [main] TRACE com.bankapplication.model.RegisterModel:114 - entered username:mukesh
 11-10-2020 Tuesday CST 22:51:46.797   [main] FATAL com.bankapplication.model.RegisterModel:115 - Please Enter Password:
 11-10-2020 Tuesday CST 22:51:51.975   [main] TRACE com.bankapplication.model.RegisterModel:117 - entered password:pass
+11-11-2020 Wednesday CST 08:40:13.750   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 08:40:13.758   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:360 - phoneNumber773492868
+11-11-2020 Wednesday CST 08:40:46.493   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 08:40:46.498   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:360 - phoneNumber773492868
+11-11-2020 Wednesday CST 08:41:25.789   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 08:41:25.793   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:360 - phoneNumber773492868
+11-11-2020 Wednesday CST 09:24:16.767   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 09:24:16.775   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:360 - phoneNumber773492868
+11-11-2020 Wednesday CST 09:25:37.532   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:359 - Please enter phone Number in 10 digit only e.g 7734027577
+11-11-2020 Wednesday CST 09:25:37.538   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:360 - phoneNumber773492868
