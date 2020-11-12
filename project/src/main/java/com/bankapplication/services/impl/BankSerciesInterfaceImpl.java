@@ -502,12 +502,13 @@ public boolean verifyBankAccountRequirements(BankAccountRegister bankAccountRegi
 @Override
 public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) throws BusinessException {
 	
-	int customerId = bankServiceDAO.getCustomerIdByAccountNumber(accountNumber);
-	  
-	CustomerInfo customerInfo = bankServiceDAO.getCustomerDetailByAccountNumber(customerId);
    
 	if(byAccViewChoice == 1) {
 		// view account detail by account number
+		  int customerId = bankServiceDAO.getCustomerIdByAccountNumber(accountNumber);
+		  
+		  CustomerInfo customerInfo = bankServiceDAO.getCustomerDetailByAccountNumber(customerId);
+
 		
 		  BankAccountRegister bankAccount =  bankServiceDAO.getAllAccDetailsByAccountNumber(accountNumber);
 		 
@@ -523,11 +524,11 @@ public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) 
 		
 		// view all account details
 		
-		  List<BankAccountRegister> allAccountDetailList = bankServiceDAO.getAllAccDetailsListByAccountNumber(accountNumber);
+		  List<BankAccountRegister> allAccountDetailList = bankServiceDAO.getAllAccDetailsListByEmployee();
 		  System.out.println();
-		  System.out.println("Account Details");
-		  System.out.println("-----------------");
-		  System.out.println(customerInfo);
+		  System.out.println("All Accounts Detail List");
+		  System.out.println("-------------------------");
+		  //System.out.println(customerInfo);
 		  
 		  if(allAccountDetailList.size() > 0) {
 			  for( BankAccountRegister accList : allAccountDetailList ) {
@@ -557,7 +558,7 @@ public void getAllTransactionByAccountNumber(int accountNumber) throws BusinessE
 		
 		List<AccountTransaction>  accountTransactionList = bankServiceDAO.getAllTransactionsByAccountNumber(accountNumber);
 		
-		System.out.println("All transaction of " + accountNumber);
+		System.out.println("All transaction of account number : " + accountNumber);
 		System.out.println("------------------------------------");
 		
 		for(AccountTransaction accountTransaction : accountTransactionList ) {

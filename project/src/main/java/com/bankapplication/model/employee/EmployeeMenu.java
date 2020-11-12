@@ -41,7 +41,7 @@ public class EmployeeMenu {
 		    	 System.out.println(); 
 				 System.out.println(" Employee Section Menu ");
 				 System.out.println("=============================");
-				 System.out.println("1) View Customer's Account. ");
+				 System.out.println("1) View Account Details. ");
 				 System.out.println("2) View log of all transaction ");
 				 System.out.println("3) Update Customer's Account Status.");
 				 System.out.println("4) EXIT ");
@@ -118,7 +118,6 @@ public class EmployeeMenu {
 					 
 					 // Approve or Reject Customer's Account
 					 
-					 System.out.println("Thank You for interesting ... This option still Under CONSTRUCTION !!!");
 				     
 					 System.out.println("Bank Account Status Admin Section :");
 					 System.out.println("----------------------------------");
@@ -151,7 +150,7 @@ public class EmployeeMenu {
 				
 					 // EXIT from Employee  Menu		
 					 System.out.println("\n");
-					logger.fatal("<<=== You are Exit of Employee Menu ===>");
+					logger.fatal("<<=== Exit From Employee Menu ===>");
 					 System.out.println("<<<== THANK YOU ==>>");
 					
 					

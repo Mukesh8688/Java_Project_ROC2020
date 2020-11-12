@@ -49,6 +49,8 @@ public interface BankServicesDAOInterface {
 	
 	public List<BankAccountRegister> getAllAccDetailsListByAccountNumber(int accountNumber) throws BusinessException;
 	
+	public List<BankAccountRegister> getAllAccDetailsListByEmployee() throws BusinessException;
+	
 	public List<BankAccountRegister> getAllAccountBalanceByUserId(int customerId) throws BusinessException;
 	
 	

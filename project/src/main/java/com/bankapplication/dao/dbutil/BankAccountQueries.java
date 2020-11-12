@@ -56,6 +56,11 @@ public class BankAccountQueries {
 			+ "FROM project_schema.bank_account\n"
 			+ "WHERE accountnumber = ? ; ";
 	
+	
+	public static String GET_ACCOUNTINFO = "SELECT accountnumber,balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, accounttype, branchloc\n"
+			+ "FROM project_schema.bank_account ; ";
+
+	
 	public static String GET_ACC_BALANCE_BY_CUSTOMERID = "SELECT accountnumber,balance, openingbalance, accountname, dateopened, interest, account_status, accounttype, branchloc\n"
 			+"FROM project_schema.bank_account\n"
 			+ "WHERE customers_customerid  = ? ;";

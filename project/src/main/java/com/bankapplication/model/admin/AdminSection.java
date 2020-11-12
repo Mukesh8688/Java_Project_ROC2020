@@ -154,7 +154,19 @@ public class AdminSection {
 
 		
 		try {
-			status = bankServicesInterface.createEmployeeUserProfile(adminSection.getUsername(), adminSection.getPassword(), adminSection.getEmail(), adminSection.getUsertype());
+			
+			if(adminSection.getUsername().length() < 4) {
+				
+				throw new BusinessException("Username should be more than 3 character...\nplease try again...");
+				
+			}
+			
+			if(adminSection.getUsername().length() > 3) {
+			
+			   status = bankServicesInterface.createEmployeeUserProfile(adminSection.getUsername(), adminSection.getPassword(), adminSection.getEmail(), adminSection.getUsertype());
+			   
+			}
+			
 		} catch (BusinessException e) {
 		   
 			logger.fatal(e.getMessage());

@@ -793,6 +793,46 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 		return allAccountList;
 		
 	}
+	
+	@Override
+	public List<BankAccountRegister> getAllAccDetailsListByEmployee() throws BusinessException{
+		
+		
+		 List<BankAccountRegister> allAccountList = new ArrayList<>();
+		
+		 try(Connection connection = PostgresDBConncetion.getConnection()){
+	    		
+	    		String sql = BankAccountQueries.GET_ACCOUNTINFO;
+	    		
+	    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+	    		
+	    		ResultSet resultSet = preparedStatement.executeQuery();
+	    		
+	    		while(resultSet.next()) {
+	    			
+	    			BankAccountRegister bankAccountBalance = new BankAccountRegister(resultSet.getInt("accountnumber"), resultSet.getDouble("balance"), 
+	    					resultSet.getDouble("openingbalance"), resultSet.getString("accountname"), resultSet.getInt("customers_customerid"),
+	    					resultSet.getDate("dateopened"), resultSet.getDouble("interest"), resultSet.getInt("account_status"),
+	    					resultSet.getInt("accounttype"), resultSet.getString("branchloc"));
+	    			
+	    			allAccountList.add(bankAccountBalance);
+	    			
+	    		}
+	    			
+	    
+	    		
+	    	}catch(ClassNotFoundException|SQLException e) {
+	    		
+	    		throw new BusinessException("Account Number doesn't Exist ...\nPlease Try Again ...");
+	    	}
+	    
+		
+		
+		return allAccountList;
+		
+		
+		
+	}
 
 
 	@Override
