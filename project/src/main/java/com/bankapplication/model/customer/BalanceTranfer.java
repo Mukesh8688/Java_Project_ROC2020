@@ -84,23 +84,28 @@ public class BalanceTranfer {
 		  System.out.println("-------------------");
 		  logger.fatal("How much would you like to transfer ? : $");
 		  balancetransfer.setSendAmount(Double.parseDouble(scanner.nextLine()));
-		  logger.fatal("Please enter account number from where you want to transfer: ");
+		  logger.fatal("Please enter Account Number from where you want to transfer: ");
 		  balancetransfer.setSendingAccountNumber(Integer.parseInt(scanner.nextLine()));
 		  
-		  logger.fatal("Please enter account number where you want to transfer: ");
+		  logger.fatal("Please enter Acoount Number where you want to transfer: ");
 		  balancetransfer.setReceivingAccountNumber(Integer.parseInt(scanner.nextLine()));
 		  
-        
+          
 		
 		  return balancetransfer;
 		
 	}
 	
 	
-	public static int transferAmount(BalanceTranfer balancetransfer) {
+	public static int transferAmount(BalanceTranfer balancetransfer) throws BusinessException{
 		int success =0;
 		
 		BankAccountRegister bankAccountDetails = new BankAccountRegister() ;
+		
+		if(balancetransfer.getSendingAccountNumber() == balancetransfer.getReceivingAccountNumber()){
+			
+			throw new BusinessException("Sender Account Number and Receiving Account Number shouldn't be same ...\nPlease try again...");
+		}
 		
 		try {
 			

@@ -3576,3 +3576,107 @@ Or type 4 to exit from Application ...
 11-12-2020 Thursday CST 07:28:34.248   [main] FATAL com.bankapplication.model.customer.CustomerMenu:41 - 4) EXIT
 11-12-2020 Thursday CST 07:28:34.248   [main] FATAL com.bankapplication.model.customer.CustomerMenu:42 - ================================
 11-12-2020 Thursday CST 07:28:34.248   [main] FATAL com.bankapplication.model.customer.CustomerMenu:43 - Please enter appropriate choice(1-4) :) 
+11-12-2020 Thursday CST 07:34:23.513   [main] FATAL com.bankapplication.model.customer.CustomerMenu:36 -  **** MAIN MENU **** 
+11-12-2020 Thursday CST 07:34:23.516   [main] FATAL com.bankapplication.model.customer.CustomerMenu:37 - ================================
+11-12-2020 Thursday CST 07:34:23.517   [main] FATAL com.bankapplication.model.customer.CustomerMenu:38 - 1) Log in 
+11-12-2020 Thursday CST 07:34:23.517   [main] FATAL com.bankapplication.model.customer.CustomerMenu:39 - 2) Sign up 
+11-12-2020 Thursday CST 07:34:23.517   [main] FATAL com.bankapplication.model.customer.CustomerMenu:40 - 3) Admin
+11-12-2020 Thursday CST 07:34:23.517   [main] FATAL com.bankapplication.model.customer.CustomerMenu:41 - 4) EXIT
+11-12-2020 Thursday CST 07:34:23.517   [main] FATAL com.bankapplication.model.customer.CustomerMenu:42 - ================================
+11-12-2020 Thursday CST 07:34:23.517   [main] FATAL com.bankapplication.model.customer.CustomerMenu:43 - Please enter appropriate choice(1-4) :) 
+11-12-2020 Thursday CST 07:34:27.606   [main] TRACE com.bankapplication.model.customer.CustomerMenu:49 - enteredOption:1
+11-12-2020 Thursday CST 07:34:27.615   [main] FATAL com.bankapplication.model.RegisterModel:110 - Please Enter Username:
+11-12-2020 Thursday CST 07:34:30.362   [main] TRACE com.bankapplication.model.RegisterModel:112 - entered username:preet
+11-12-2020 Thursday CST 07:34:30.362   [main] FATAL com.bankapplication.model.RegisterModel:113 - Please Enter Password:
+11-12-2020 Thursday CST 07:34:33.345   [main] TRACE com.bankapplication.model.RegisterModel:115 - entered password:preet
+11-12-2020 Thursday CST 07:34:33.464   [main] FATAL com.bankapplication.model.customer.CustomerMenu:47 -  ******** WELCOME ********** 
+11-12-2020 Thursday CST 07:34:33.464   [main] FATAL com.bankapplication.model.customer.CustomerMenu:49 -  Services Menu 
+11-12-2020 Thursday CST 07:34:33.464   [main] FATAL com.bankapplication.model.customer.CustomerMenu:50 - ==============================
+11-12-2020 Thursday CST 07:34:33.465   [main] FATAL com.bankapplication.model.customer.CustomerMenu:51 - 1) Apply for New Bank Account 
+11-12-2020 Thursday CST 07:34:33.466   [main] FATAL com.bankapplication.model.customer.CustomerMenu:52 - 2) View Account Balance
+11-12-2020 Thursday CST 07:34:33.466   [main] FATAL com.bankapplication.model.customer.CustomerMenu:53 - 3) Withdraw 
+11-12-2020 Thursday CST 07:34:33.466   [main] FATAL com.bankapplication.model.customer.CustomerMenu:54 - 4) Deposit 
+11-12-2020 Thursday CST 07:34:33.466   [main] FATAL com.bankapplication.model.customer.CustomerMenu:55 - 5) Balance Transfer
+11-12-2020 Thursday CST 07:34:33.466   [main] FATAL com.bankapplication.model.customer.CustomerMenu:56 - 6) Exit
+11-12-2020 Thursday CST 07:34:33.466   [main] FATAL com.bankapplication.model.customer.CustomerMenu:57 - ===============================
+11-12-2020 Thursday CST 07:34:33.467   [main] FATAL com.bankapplication.model.customer.CustomerMenu:58 - Please enter appropriate choice(1-6) :) 
+11-12-2020 Thursday CST 07:34:36.465   [main] FATAL com.bankapplication.model.account.BankAccountRegister:221 - Type 1 - Checking Account :
+11-12-2020 Thursday CST 07:34:36.465   [main] FATAL com.bankapplication.model.account.BankAccountRegister:222 - Type 2 - Saving Account :
+11-12-2020 Thursday CST 07:34:36.466   [main] FATAL com.bankapplication.model.account.BankAccountRegister:223 - Type 3 - EXIT 
+11-12-2020 Thursday CST 07:34:38.528   [main] ERROR com.bankapplication.model.account.BankAccountRegister:237 - Accouttype:1
+11-12-2020 Thursday CST 07:34:38.528   [main] TRACE com.bankapplication.model.account.BankAccountRegister:258 - AccoutTypeChoice:1
+11-12-2020 Thursday CST 07:34:38.553   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:280 - You have more than one account
+11-12-2020 Thursday CST 07:34:38.553   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:281 - ------------------------------
+11-12-2020 Thursday CST 07:34:38.554   [main] FATAL com.bankapplication.model.account.BankAccountRegister:421 - [ Account Number :1000008, Account Name :Checking Account, Account Balance :$2000.0 ]
+11-12-2020 Thursday CST 07:34:38.554   [main] FATAL com.bankapplication.model.account.BankAccountRegister:421 - [ Account Number :1000003, Account Name :Checking Account, Account Balance :$200.0 ]
+11-12-2020 Thursday CST 07:34:38.554   [main] FATAL com.bankapplication.model.account.BankAccountRegister:421 - [ Account Number :1000005, Account Name :Checking Account, Account Balance :$1000.0 ]
+11-12-2020 Thursday CST 07:34:38.555   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:286 - It seems more than one account...
+Please enter account number :
+11-12-2020 Thursday CST 07:34:46.362   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:306 - entetedACCNum: 1000008
+11-12-2020 Thursday CST 07:34:46.362   [main] FATAL com.bankapplication.services.impl.BankSerciesInterfaceImpl:308 - Please enter Amount what you want to make :
+11-12-2020 Thursday CST 07:35:21.809   [main] TRACE com.bankapplication.services.impl.BankSerciesInterfaceImpl:310 - entetedACCNum: -20.0
+11-12-2020 Thursday CST 07:35:21.822   [main] FATAL com.bankapplication.model.customer.CustomerMenu:163 - Negetive withdraw amount isn't allowed ... 
+11-12-2020 Thursday CST 07:35:21.823   [main] FATAL com.bankapplication.model.customer.CustomerMenu:47 -  ******** WELCOME ********** 
+11-12-2020 Thursday CST 07:35:21.823   [main] FATAL com.bankapplication.model.customer.CustomerMenu:49 -  Services Menu 
+11-12-2020 Thursday CST 07:35:21.823   [main] FATAL com.bankapplication.model.customer.CustomerMenu:50 - ==============================
+11-12-2020 Thursday CST 07:35:21.824   [main] FATAL com.bankapplication.model.customer.CustomerMenu:51 - 1) Apply for New Bank Account 
+11-12-2020 Thursday CST 07:35:21.824   [main] FATAL com.bankapplication.model.customer.CustomerMenu:52 - 2) View Account Balance
+11-12-2020 Thursday CST 07:35:21.824   [main] FATAL com.bankapplication.model.customer.CustomerMenu:53 - 3) Withdraw 
+11-12-2020 Thursday CST 07:35:21.824   [main] FATAL com.bankapplication.model.customer.CustomerMenu:54 - 4) Deposit 
+11-12-2020 Thursday CST 07:35:21.825   [main] FATAL com.bankapplication.model.customer.CustomerMenu:55 - 5) Balance Transfer
+11-12-2020 Thursday CST 07:35:21.825   [main] FATAL com.bankapplication.model.customer.CustomerMenu:56 - 6) Exit
+11-12-2020 Thursday CST 07:35:21.825   [main] FATAL com.bankapplication.model.customer.CustomerMenu:57 - ===============================
+11-12-2020 Thursday CST 07:35:21.825   [main] FATAL com.bankapplication.model.customer.CustomerMenu:58 - Please enter appropriate choice(1-6) :) 
+11-12-2020 Thursday CST 07:43:51.343   [main] FATAL com.bankapplication.model.customer.CustomerMenu:36 -  **** MAIN MENU **** 
+11-12-2020 Thursday CST 07:43:51.348   [main] FATAL com.bankapplication.model.customer.CustomerMenu:37 - ================================
+11-12-2020 Thursday CST 07:43:51.348   [main] FATAL com.bankapplication.model.customer.CustomerMenu:38 - 1) Log in 
+11-12-2020 Thursday CST 07:43:51.348   [main] FATAL com.bankapplication.model.customer.CustomerMenu:39 - 2) Sign up 
+11-12-2020 Thursday CST 07:43:51.348   [main] FATAL com.bankapplication.model.customer.CustomerMenu:40 - 3) Admin
+11-12-2020 Thursday CST 07:43:51.349   [main] FATAL com.bankapplication.model.customer.CustomerMenu:41 - 4) EXIT
+11-12-2020 Thursday CST 07:43:51.349   [main] FATAL com.bankapplication.model.customer.CustomerMenu:42 - ================================
+11-12-2020 Thursday CST 07:43:51.351   [main] FATAL com.bankapplication.model.customer.CustomerMenu:43 - Please enter appropriate choice(1-4) :) 
+11-12-2020 Thursday CST 07:43:56.332   [main] FATAL com.bankapplication.model.customer.CustomerMenu:52 - You didn't choose any option !!! ...
+11-12-2020 Thursday CST 07:43:56.333   [main] FATAL com.bankapplication.model.customer.CustomerMenu:146 - Please Choose Right option ... 
+Or type 4 to exit from Application ... 
+
+===THANK YOU===
+11-12-2020 Thursday CST 07:43:56.333   [main] FATAL com.bankapplication.model.customer.CustomerMenu:36 -  **** MAIN MENU **** 
+11-12-2020 Thursday CST 07:43:56.334   [main] FATAL com.bankapplication.model.customer.CustomerMenu:37 - ================================
+11-12-2020 Thursday CST 07:43:56.334   [main] FATAL com.bankapplication.model.customer.CustomerMenu:38 - 1) Log in 
+11-12-2020 Thursday CST 07:43:56.334   [main] FATAL com.bankapplication.model.customer.CustomerMenu:39 - 2) Sign up 
+11-12-2020 Thursday CST 07:43:56.335   [main] FATAL com.bankapplication.model.customer.CustomerMenu:40 - 3) Admin
+11-12-2020 Thursday CST 07:43:56.335   [main] FATAL com.bankapplication.model.customer.CustomerMenu:41 - 4) EXIT
+11-12-2020 Thursday CST 07:43:56.337   [main] FATAL com.bankapplication.model.customer.CustomerMenu:42 - ================================
+11-12-2020 Thursday CST 07:43:56.337   [main] FATAL com.bankapplication.model.customer.CustomerMenu:43 - Please enter appropriate choice(1-4) :) 
+11-12-2020 Thursday CST 07:43:59.621   [main] TRACE com.bankapplication.model.customer.CustomerMenu:49 - enteredOption:1
+11-12-2020 Thursday CST 07:43:59.630   [main] FATAL com.bankapplication.model.RegisterModel:110 - Please Enter Username:
+11-12-2020 Thursday CST 07:44:01.978   [main] TRACE com.bankapplication.model.RegisterModel:112 - entered username:preet
+11-12-2020 Thursday CST 07:44:01.978   [main] FATAL com.bankapplication.model.RegisterModel:113 - Please Enter Password:
+11-12-2020 Thursday CST 07:44:04.309   [main] TRACE com.bankapplication.model.RegisterModel:115 - entered password:preet
+11-12-2020 Thursday CST 07:44:04.428   [main] FATAL com.bankapplication.model.customer.CustomerMenu:47 -  ******** WELCOME ********** 
+11-12-2020 Thursday CST 07:44:04.428   [main] FATAL com.bankapplication.model.customer.CustomerMenu:49 -  Services Menu 
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:50 - ==============================
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:51 - 1) Apply for New Bank Account 
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:52 - 2) View Account Balance
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:53 - 3) Withdraw 
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:54 - 4) Deposit 
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:55 - 5) Balance Transfer
+11-12-2020 Thursday CST 07:44:04.429   [main] FATAL com.bankapplication.model.customer.CustomerMenu:56 - 6) Exit
+11-12-2020 Thursday CST 07:44:04.430   [main] FATAL com.bankapplication.model.customer.CustomerMenu:57 - ===============================
+11-12-2020 Thursday CST 07:44:04.430   [main] FATAL com.bankapplication.model.customer.CustomerMenu:58 - Please enter appropriate choice(1-6) :) 
+11-12-2020 Thursday CST 07:44:08.292   [main] FATAL com.bankapplication.model.account.BankAccountRegister:85 - How much would you like to transfer ? : $
+11-12-2020 Thursday CST 07:44:12.836   [main] FATAL com.bankapplication.model.account.BankAccountRegister:87 - Please enter Account Number from where you want to transfer: 
+11-12-2020 Thursday CST 07:44:20.333   [main] FATAL com.bankapplication.model.account.BankAccountRegister:90 - Please enter Acoount Number where you want to transfer: 
+11-12-2020 Thursday CST 07:44:29.591   [main] FATAL com.bankapplication.model.customer.CustomerMenu:224 - Sender Account Number and Receiving Account Number should be same ...
+Please try again...
+11-12-2020 Thursday CST 07:44:29.592   [main] FATAL com.bankapplication.model.customer.CustomerMenu:47 -  ******** WELCOME ********** 
+11-12-2020 Thursday CST 07:44:29.592   [main] FATAL com.bankapplication.model.customer.CustomerMenu:49 -  Services Menu 
+11-12-2020 Thursday CST 07:44:29.592   [main] FATAL com.bankapplication.model.customer.CustomerMenu:50 - ==============================
+11-12-2020 Thursday CST 07:44:29.592   [main] FATAL com.bankapplication.model.customer.CustomerMenu:51 - 1) Apply for New Bank Account 
+11-12-2020 Thursday CST 07:44:29.593   [main] FATAL com.bankapplication.model.customer.CustomerMenu:52 - 2) View Account Balance
+11-12-2020 Thursday CST 07:44:29.593   [main] FATAL com.bankapplication.model.customer.CustomerMenu:53 - 3) Withdraw 
+11-12-2020 Thursday CST 07:44:29.593   [main] FATAL com.bankapplication.model.customer.CustomerMenu:54 - 4) Deposit 
+11-12-2020 Thursday CST 07:44:29.593   [main] FATAL com.bankapplication.model.customer.CustomerMenu:55 - 5) Balance Transfer
+11-12-2020 Thursday CST 07:44:29.594   [main] FATAL com.bankapplication.model.customer.CustomerMenu:56 - 6) Exit
+11-12-2020 Thursday CST 07:44:29.594   [main] FATAL com.bankapplication.model.customer.CustomerMenu:57 - ===============================
+11-12-2020 Thursday CST 07:44:29.594   [main] FATAL com.bankapplication.model.customer.CustomerMenu:58 - Please enter appropriate choice(1-6) :) 

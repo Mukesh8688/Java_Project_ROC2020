@@ -457,7 +457,7 @@ public boolean verifyBankAccountRequirements(BankAccountRegister bankAccountRegi
 		  isvarify =true;
 	  }else {
 		  
-		  logger.fatal("Amount isn't allowed in negetive");
+		  logger.fatal("Negetive Amount isn't allowed ... ");
 		  logger.trace("Enter Balance Amount" + bankAccountRegister.getBalance());
 		  logger.trace("Enter Balance Amount" + bankAccountRegister.getOpeningBalance());
 		  isvarify =false;

@@ -210,20 +210,21 @@ public class CustomerMenu {
 						  
 						  // Balance Tranfer  Section
 						 
-						 BalanceTranfer balanceTranfer = new BalanceTranfer();
-						 
+						BalanceTranfer balanceTranfer = new BalanceTranfer();
+						int success = 0;
 						 
 						try {
 							
 							balanceTranfer = BalanceTranfer.getAllRequiredInfo();
 							
+							success = BalanceTranfer.transferAmount(balanceTranfer);
+							
 						} catch (BusinessException e) {
 						
 							logger.fatal(e.getMessage());
 						}
-						 
-						 
-						int success = BalanceTranfer.transferAmount(balanceTranfer);
+						
+					
 						 
   						if(success == 1) {
   							
