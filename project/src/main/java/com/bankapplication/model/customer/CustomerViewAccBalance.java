@@ -68,11 +68,11 @@ public class CustomerViewAccBalance {
 	public void askAccoutParameter() throws BusinessException{
 		
 		System.out.println();
-		System.out.println("Select Type to view Account Balance");
-		System.out.println("-----------------------------------");
+		System.out.println("Select Type to view account");
+		System.out.println("------------------------------");
 		System.out.println("1) By Account Number");
 		System.out.println("2) View All Accounts");
-		System.out.println("-----------------------------------");
+		System.out.println("------------------------------");
 		
 	    choice = Integer.parseInt(scanner.nextLine());
 		
@@ -85,7 +85,7 @@ public class CustomerViewAccBalance {
 		     int byCustomerId = BankDAOObject.getCustomerId(byUserid);
 		     setByCustomerId(byCustomerId);
 		}else {
-			throw new BusinessException("Please Choose Type to view Account Balance ...");
+			throw new BusinessException("Please Choose option to view Account Balance ...");
 		}
 		
 		
@@ -115,7 +115,7 @@ public class CustomerViewAccBalance {
 			logger.trace("Entered choiceEmployee:" + choiceByEmployee);
 			
 		}else {
-			throw new BusinessException("Please Choose Type to view Account Balance ...");
+			throw new BusinessException("Please Choose option to view Account Balance ...");
 		}
 		
 		

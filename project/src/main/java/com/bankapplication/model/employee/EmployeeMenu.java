@@ -3,7 +3,6 @@ package com.bankapplication.model.employee;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
 
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.customer.CustomerMenu;

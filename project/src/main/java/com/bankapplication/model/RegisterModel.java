@@ -1,8 +1,6 @@
 package com.bankapplication.model;
 
 import java.util.Scanner;
-import java.util.Date;
-import java.text.SimpleDateFormat;
 
 import org.apache.log4j.Logger; 
 

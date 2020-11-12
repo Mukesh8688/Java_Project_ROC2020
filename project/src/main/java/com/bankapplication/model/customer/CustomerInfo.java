@@ -1,6 +1,5 @@
 package com.bankapplication.model.customer;
 
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -10,7 +9,6 @@ import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
-import com.bankapplication.model.RegisterModel;
 import com.bankapplication.model.account.BankAccountRegister;
 
 public class CustomerInfo {
@@ -225,10 +223,10 @@ public class CustomerInfo {
 
 	@Override
 	public String toString() {
-		return "CustomerInfo [customerId=" + customerId + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", addressStreetName=" + addressStreetName + ", city=" + city + ", state=" + state + ", zipCode="
-				+ zipCode + ", phoneNumber=" + phoneNumber + ", SSN=" + SSN + ", joinDate=" + joinDate
-				+ ", customerRegisterId=" + customerRegisterId + "]";
+		return "[Customer ID=" + customerId + ", First Name=" + firstName + ", Last Name=" + lastName
+				+ ", Address =" + addressStreetName + ", City=" + city + ", State=" + state + ", ZipCode="
+				+ zipCode + ", Phone Number=" + phoneNumber + ", SSN=" + SSN + ", Join Date=" + joinDate
+				+ ", Customer RegisterId=" + customerRegisterId + " ]";
 	}
 
 

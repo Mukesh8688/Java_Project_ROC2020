@@ -2,15 +2,9 @@ package com.bankapplication.main;
 
 import java.util.Scanner;
 
-import org.apache.log4j.Logger;
-
-import com.bankapplication.dao.BankServicesDAOInterface;
-import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.SignUpModel;
-import com.bankapplication.model.admin.AdminSection;
-import com.bankapplication.services.impl.BankSerciesInterfaceImpl;
 
 
 
@@ -141,7 +135,7 @@ public class BankMain {
 	
 			default:
 				System.out.println();
-				System.out.println("Please Choose Right option ... \nOr type 4 to exit from Application ... \n===THANK YOU===");
+				System.out.println("Please Choose Right option ... \nOr type 4 to exit from Application ... \n\n===THANK YOU===");
 				break;
 			}
 

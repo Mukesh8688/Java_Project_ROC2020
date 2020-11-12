@@ -1,13 +1,10 @@
 package com.bankapplication.model.account;
 
-import java.text.SimpleDateFormat;
-import java.util.Scanner;
 
 import java.util.Date;
-import java.time.LocalDate;
+import java.util.Scanner;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.TriggeringEventEvaluator;
 
 import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.impl.BankServicesDAOImpl;
@@ -24,14 +21,14 @@ public class BankAccountRegister {
 	private static BankServicesDAOInterface  bankServiceDAO = new BankServicesDAOImpl();
 	
 	/* Setting Date Format MM-dd-yyyy ( Month-days- year) */
-	private static SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+	//private static SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 	
 	//log4j
 	private static Logger logger = Logger.getLogger(BankAccountRegister.class);
 	
 	
 	//Scanner
-	Scanner scanner = new Scanner(System.in);
+	public static Scanner scanner = new Scanner(System.in);
 	
 	
 	// Bank Account variable declaration
@@ -277,9 +274,9 @@ public class BankAccountRegister {
 	}
 	
 
-	public void askBankAccountDetail(CustomerInfo customerinfo) throws BusinessException{
+	public static BankAccountRegister askBankAccountDetail(CustomerInfo customerinfo) throws BusinessException{
 		
-		
+		BankAccountRegister bankAccountRegister = new BankAccountRegister();		
 		/* 
 		 * Account Number inserted by Auto increatement by Database
 		 * Format 7 digit integer length
@@ -292,13 +289,13 @@ public class BankAccountRegister {
 		 * 3 - EXIT
 		 */
 		
-		askAccountType();
+		bankAccountRegister.askAccountType();
 		
-		int accoutType = verifyAccountType();
+		int accoutType = bankAccountRegister.verifyAccountType();
 		
 		if(accoutType != 3) {
 			
-				setAccountType(accoutType);
+			bankAccountRegister.setAccountType(accoutType);
 				logger.trace("AccoutType:" + accoutType);
 						
 				/* asking customer personal information */
@@ -306,17 +303,17 @@ public class BankAccountRegister {
 				if(accoutType == 1) {
 					System.out.println("Welcome to Checking Account");
 					System.out.println("-----------------------------");
-					setAccountName("Checking Account");
-					setInterest(0.1);
+					bankAccountRegister.setAccountName("Checking Account");
+					bankAccountRegister.setInterest(0.1);
 				}else if(accoutType == 2) {
 					System.out.println("Welcome to Saving Account");
 					System.out.println("-----------------------------");
-					setAccountName("Saving Account");
-					setInterest(2);
+					bankAccountRegister.setAccountName("Saving Account");
+					bankAccountRegister.setInterest(2);
 							
 				}else {
-					setAccountName("None");
-					setInterest(0);
+					bankAccountRegister.setAccountName("None");
+					bankAccountRegister.setInterest(0);
 				}
 		
 						
@@ -335,7 +332,7 @@ public class BankAccountRegister {
 					}
 					
 				} catch (BusinessException e) {
-					e.printStackTrace();
+					logger.fatal(e.getMessage());
 				}
 						
 						
@@ -345,15 +342,15 @@ public class BankAccountRegister {
 				logger.fatal("Please enter Opening Balance Amount : $");
 				double openingBalance = Double.parseDouble(scanner.nextLine());
 				if(openingBalance > 0) {
-				    setBalance(openingBalance);
-				    setOpeningBalance(openingBalance);
-					logger.trace("opening Balance :$" + getOpeningBalance() );
-					logger.trace("Balance :$" + getBalance() );
+					bankAccountRegister.setBalance(openingBalance);
+					bankAccountRegister.setOpeningBalance(openingBalance);
+					logger.trace("opening Balance :$" + bankAccountRegister.getOpeningBalance() );
+					logger.trace("Balance :$" +bankAccountRegister.getBalance() );
 				}else {
 							
 					System.out.println("Negetive Amount isn't allowed to open Bank Account !! ...");
-					setBalance(0);
-					setOpeningBalance(0);
+					bankAccountRegister.setBalance(0);
+					bankAccountRegister.setOpeningBalance(0);
 				}
 						
 						
@@ -370,14 +367,14 @@ public class BankAccountRegister {
 			    * Employee User have authority to manipulate this status with  proper valid Reasons
 			    */
 						
-				setAccountStatus(1);
+				bankAccountRegister.setAccountStatus(1);
 						
 				/*
 				 * On this Bank Application have only one branch now 
 				 * format State and Number(4 digit)  e.g  IL0001
 				 */
 						
-				setBranchLoc("IL0001");
+				bankAccountRegister.setBranchLoc("IL0001");
 						
 						
 			    /* retrieving customer id 
@@ -408,6 +405,9 @@ public class BankAccountRegister {
 			System.out.println("Please Type Again...");
 			System.out.println();
 		}
+		
+		
+		return bankAccountRegister;
 					
 	}
 	
@@ -416,15 +416,14 @@ public class BankAccountRegister {
 	public void displayAccountDeatails() {
 		
 		System.out.println();
-		System.out.println("Account Details of : " + getCustomerAccountNum() );
-		System.out.println("-----------------------------");
-		System.out.println("Account Number : " + getCustomerAccountNum() );
-		System.out.println("Account Name : " + getAccountName() );
-		System.out.println("Account Balance: $" + getBalance());
+		//System.out.println("Account Details of : " + getCustomerAccountNum() );
+		//System.out.println("-----------------------------");
+		System.out.println( "[ Account Number :" + getCustomerAccountNum() +", Account Name :" + getAccountName() + 
+				            ", Account Balance :$" + getBalance()+ " ]") ;
 		logger.trace(getCustomerAccountNum());
 		logger.trace(getAccountName());
 		logger.trace(getBalance());
-		System.out.println("-----------------------------");
+		//System.out.println();
 		
 	}
    

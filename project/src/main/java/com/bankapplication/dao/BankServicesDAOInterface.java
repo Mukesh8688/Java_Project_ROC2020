@@ -1,8 +1,6 @@
 package com.bankapplication.dao;
 
-import java.sql.ResultSet;
 import java.util.List;
-
 
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.RegisterModel;
@@ -39,7 +37,13 @@ public interface BankServicesDAOInterface {
 	
 	public int getCustomerId(int userId) throws BusinessException;
 	
+	public int getCustomerIdByAccountNumber(int accountNumber) throws BusinessException;
+	
+	public int getAccountNumberByCustomerId(int customerId) throws BusinessException;
+	
 	public double getAccountBalance(int accountNumber) throws BusinessException;
+	
+	public CustomerInfo getCustomerDetailByAccountNumber(int accountNumber) throws BusinessException;
 	
 	public BankAccountRegister getAllAccDetailsByAccountNumber(int accountNumber) throws BusinessException;
 	
@@ -57,6 +61,9 @@ public interface BankServicesDAOInterface {
 	public int updateBankAccountStatus(int accountNumber, int accountStatus) throws BusinessException;
 	
 	public int createEmployeeUserProfile(String username, String password, String email, int usertype) throws BusinessException;
+	
+	
+	public boolean isVerifyAccountNumByCustomerId(int accountNumber,int customerId) throws BusinessException;
 	
 	
 

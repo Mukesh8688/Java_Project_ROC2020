@@ -10,7 +10,6 @@ import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.account.AccountTransaction;
-import com.bankapplication.model.account.BankAccount;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.model.customer.BalanceTranfer;
 import com.bankapplication.model.customer.CustomerInfo;
@@ -137,7 +136,7 @@ public boolean applyNewBankAcoount(CustomerInfo customerinfo, BankAccountRegiste
 	boolean isSuccess = false;
 	
 	
-	if(customerinfo != null && bankAccountRegister != null) {
+	if(bankAccountRegister != null) {
 		
 		if(bankAccountRegister.getAccountType() != 3) {
 			
@@ -148,33 +147,36 @@ public boolean applyNewBankAcoount(CustomerInfo customerinfo, BankAccountRegiste
 	           int customerId = bankServiceDAO.getCustomerId(userId);
 	           
 	           if(customerId != 0) {
-	        	     
-	        	     if(verifyBankAccountRequirements(customerinfo)) {
-	                       int BankStatus =  bankServiceDAO.createBankAccount(bankAccountRegister,customerId);
-			                 if(BankStatus == 1) {
-			                       isSuccess = true;
-			                 }else {
-			                	 isSuccess = false;
-			                 }
-	        	     }else {
+	        	    
+			        
+			         int BankStatus =  bankServiceDAO.createBankAccount(bankAccountRegister,customerId);
+					 if(BankStatus == 1) {
+					        isSuccess = true;
+					 }else {
+					       isSuccess = false;
+					 }
+			       
+	              
 	        	    	 
-	        	 		throw new BusinessException(" Account Requirements should be fullfil !! ");
-	        	     }
+	        	 	
 	           
 	           }else {
 	        	   
-	        	   if(verifyBankAccountRequirements(customerinfo) && verifyBankAccountRequirements(bankAccountRegister)) {
-		        	   int customerStatus = bankServiceDAO.createCustomerProfile(customerinfo,userId);
-		        	   int BankStatus = 0;
-		        	   if(customerStatus == 1) {
-			        	   int customerIdAgain = bankServiceDAO.getCustomerId(userId);
-			        	   BankStatus =  bankServiceDAO.createBankAccount(bankAccountRegister,customerIdAgain);
-		        	   }
-		               if(BankStatus == 1 && customerStatus == 1 ) {
-	                       isSuccess = true;
-	                    }else {
-	                	 isSuccess = false;
-	                    }
+	        	   if(customerinfo != null) {
+	        	   
+			        	   if(verifyBankAccountRequirements(customerinfo) && verifyBankAccountRequirements(bankAccountRegister)) {
+				        	   int customerStatus = bankServiceDAO.createCustomerProfile(customerinfo,userId);
+				        	   int BankStatus = 0;
+				        	   if(customerStatus == 1) {
+					        	   int customerIdAgain = bankServiceDAO.getCustomerId(userId);
+					        	   BankStatus =  bankServiceDAO.createBankAccount(bankAccountRegister,customerIdAgain);
+				        	   }
+				               if(BankStatus == 1 && customerStatus == 1 ) {
+			                       isSuccess = true;
+			                    }else {
+			                	 isSuccess = false;
+			                    }
+			        	   }
 	        	   }else {
 	        		   
 	        		   throw new BusinessException(" Account Requirements should be fullfil !! ");
@@ -205,9 +207,28 @@ public void viewAccountBalance(CustomerViewAccBalance customerViewAccBalance , i
 	
 	if(customerViewAccBalance != null) {
 		
+		int accountNumber = customerViewAccBalance.getAccountNumber();
+		
 		if(choice == 1) {
-			BankAccountRegister bankBalance = bankServiceDAO.getAllAccDetailsByAccountNumber(customerViewAccBalance.getAccountNumber());
-			bankBalance.displayAccountDeatails();
+			
+            int customeridByUsername = bankServiceDAO.getCustomerId(bankServiceDAO.getUserId(LogInModel.getUsername()));
+			
+			
+			if(bankServiceDAO.isVerifyAccountNumByCustomerId(accountNumber, customeridByUsername)) {
+				
+			    BankAccountRegister bankBalance = bankServiceDAO.getAllAccDetailsByAccountNumber(accountNumber);
+			    System.out.println();
+				System.out.println("Customer Name : " + LogInModel.getUsername().toUpperCase());
+				System.out.println("-------------------------");
+				bankBalance.displayAccountDeatails();
+			}else {	
+				
+				throw new BusinessException("Entered account number doesn't match with your account !!... ");
+			}
+			
+	
+		
+			
 		}else if(choice == 2) {
 			
 			//int customerId = bankServiceDAO.getCustomerId(bankServiceDAO.getUserId(LogInModel.getUsername()));
@@ -216,9 +237,13 @@ public void viewAccountBalance(CustomerViewAccBalance customerViewAccBalance , i
 				System.out.println();
 				System.out.println("Customer Name : " + LogInModel.getUsername().toUpperCase());
 				System.out.println("-------------------------");
+				int n =0;
 				for(BankAccountRegister list: accountBalanceList ) {
 					list.displayAccountDeatails();
+					n++;
 				}
+				System.out.println();
+				logger.fatal("YOU HAVE " + n + " ACCOUNTS ... " );
 			}else {
 				
 				throw new BusinessException(" No Record Found ....");
@@ -349,58 +374,70 @@ public int balanceTranfer(BalanceTranfer balancetransfer) throws BusinessExcepti
 
 @Override
 public boolean verifyBankAccountRequirements(CustomerInfo customerinfo) throws BusinessException {
-	  boolean isvarify =false;
 	
-	  /*varify phone Number */
+	  boolean isvarify =false;
 	  
-	  if(customerinfo.getPhoneNumber().matches("[0-9]{10}")) {
-		  isvarify =true;
+	  
+	  if(customerinfo != null) {
+			  /*varify phone Number */
+			  try {
+					  if(customerinfo.getPhoneNumber().matches("[0-9]{10}")) {
+						  isvarify =true;
+					  }else {
+						   logger.fatal("Please enter phone Number in 10 digit only e.g 7734027577" );
+						   logger.trace("phoneNumber" + customerinfo.getPhoneNumber());
+						   isvarify =false;
+					  }
+					  
+					  /* state
+					   * abbreviations e.g IL  */ 
+					  
+					  if(customerinfo.getState().length() == 2) {
+						  isvarify =true;
+						  
+					  }else {
+						  
+						  logger.fatal("State should be 2 Upper Char e.g IL ");
+						  logger.trace("State:" + customerinfo.getState() );
+						  isvarify =false;
+					  }
+					  
+					  
+					  /* 5 digit number */
+					  
+					  if(customerinfo.getZipCode().length() == 5) {
+						  isvarify =true;
+						  
+					  }else {
+						  
+						  logger.fatal("ZipCode should be 6 digit Number e.g 60660 ");
+						  logger.trace("ZibCode:" + customerinfo.getZipCode() );
+						  isvarify =false;
+					  }
+					  
+					  /*9 digit Number */
+					  
+					  if(customerinfo.getSSN().matches("[0-9]{9}")) {
+						  isvarify =true;
+						  
+					  }else {
+						  
+						  logger.fatal("SSN should be 9 digit Numbers e.g 367780591 ");
+						  logger.trace("ZibCode:" + customerinfo.getSSN() );
+						  isvarify =false;
+					  }
+					  
+			  }catch(NullPointerException e) {
+				  
+                   logger.fatal(e.getMessage());
+			  }
+			  
 	  }else {
-		   logger.fatal("Please enter phone Number in 10 digit only e.g 7734027577" );
-		   logger.trace("phoneNumber" + customerinfo.getPhoneNumber());
-		   isvarify =false;
+		  
+		  throw new BusinessException("Account requirements doen't match with data...\"nPlease try again..");
 	  }
-	  
-	  /* state
-	   * abbreviations e.g IL  */ 
-	  
-	  if(customerinfo.getState().length() == 2) {
-		  isvarify =true;
 		  
-	  }else {
-		  
-		  logger.fatal("State should be 2 Upper Char e.g IL ");
-		  logger.trace("State:" + customerinfo.getState() );
-		  isvarify =false;
-	  }
-	  
-	  
-	  /* 5 digit number */
-	  
-	  if(customerinfo.getZipCode().length() == 5) {
-		  isvarify =true;
-		  
-	  }else {
-		  
-		  logger.fatal("ZipCode should be 6 digit Number e.g 60660 ");
-		  logger.trace("ZibCode:" + customerinfo.getZipCode() );
-		  isvarify =false;
-	  }
-	  
-	  /*9 digit Number */
-	  
-	  if(customerinfo.getSSN().matches("[0-9]{9}")) {
-		  isvarify =true;
-		  
-	  }else {
-		  
-		  logger.fatal("SSN should be 9 digit Numbers e.g 367780591 ");
-		  logger.trace("ZibCode:" + customerinfo.getSSN() );
-		  isvarify =false;
-	  }
-	  
-	  
-	  
+	 
 	  
 	  return isvarify;
 }
@@ -464,15 +501,20 @@ public boolean verifyBankAccountRequirements(BankAccountRegister bankAccountRegi
 
 @Override
 public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) throws BusinessException {
+	
+	int customerId = bankServiceDAO.getCustomerIdByAccountNumber(accountNumber);
+	  
+	CustomerInfo customerInfo = bankServiceDAO.getCustomerDetailByAccountNumber(customerId);
    
 	if(byAccViewChoice == 1) {
 		// view account detail by account number
 		
 		  BankAccountRegister bankAccount =  bankServiceDAO.getAllAccDetailsByAccountNumber(accountNumber);
-		  
+		 
 		  System.out.println();
 		  System.out.println("Account Details");
 		  System.out.println("-----------------");
+		  System.out.println(customerInfo);
 		  System.out.println(bankAccount);
 		
 		
@@ -485,6 +527,7 @@ public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) 
 		  System.out.println();
 		  System.out.println("Account Details");
 		  System.out.println("-----------------");
+		  System.out.println(customerInfo);
 		  
 		  if(allAccountDetailList.size() > 0) {
 			  for( BankAccountRegister accList : allAccountDetailList ) {
@@ -494,6 +537,7 @@ public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) 
 			  
 			  throw new BusinessException("No Record Found...");
 		  }
+		  System.out.println();
 		
 	}else {
 		

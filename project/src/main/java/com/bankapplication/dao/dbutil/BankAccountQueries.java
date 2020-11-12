@@ -49,11 +49,18 @@ public class BankAccountQueries {
 	public static String GET_ACCOUNT_BALACNE = "SELECT balance FROM project_schema.bank_account WHERE accountnumber = ? ;";
 	
 	
-	public static String GET_ACC_BALANCE_BY_ACC_NUM = "SELECT balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, accounttype, branchloc\n"
+	public static String GET_CUSTOMERINFO_BY_CUSTOMERID ="SELECT firstname, lastname, address, city, state, phonenumber, ssn, joindate, customer_registerid, zipcode\n"
+			+ "FROM project_schema.bank_customers WHERE customerid = ? ; ";
+			
+	public static String GET_ACCOUNTINFO_BY_ACC_NUM = "SELECT balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, accounttype, branchloc\n"
 			+ "FROM project_schema.bank_account\n"
 			+ "WHERE accountnumber = ? ; ";
 	
-	public static String GET_ACC_BALANCE_BY_USERID = "SELECT accountnumber,balance, openingbalance, accountname, dateopened, interest, account_status, accounttype, branchloc\n"
+	public static String GET_ACC_BALANCE_BY_CUSTOMERID = "SELECT accountnumber,balance, openingbalance, accountname, dateopened, interest, account_status, accounttype, branchloc\n"
+			+"FROM project_schema.bank_account\n"
+			+ "WHERE customers_customerid  = ? ;";
+	
+	public static String GET_ACC_NUMBER_BY_CUSTOMERID = "SELECT accountnumber,balance, openingbalance, accountname, dateopened, interest, account_status, accounttype, branchloc\n"
 			+"FROM project_schema.bank_account\n"
 			+ "WHERE customers_customerid  = ? ;";
 	

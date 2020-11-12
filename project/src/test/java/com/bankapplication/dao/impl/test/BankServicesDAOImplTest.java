@@ -1,6 +1,6 @@
 package com.bankapplication.dao.impl.test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -8,12 +8,8 @@ import org.junit.jupiter.api.Test;
 import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.impl.BankServicesDAOImpl;
 import com.bankapplication.exception.BusinessException;
-import com.bankapplication.services.impl.BankSerciesInterfaceImpl;
 
-
-import com.bankapplication.dao.dbutil.DbUtilProperties;
-
-class BankServicesDAOImplTest {
+class TestBankServicesDAOImpl {
 	
 	private static BankServicesDAOInterface bankServicesDAOImpl ;
 	
@@ -33,7 +29,7 @@ class BankServicesDAOImplTest {
 		String password = "pass";
 		String email = "preet@gmail.com";
 		
-		int n  = bankServicesDAOImpl.registerUsername(username, username,email);
+		int n  = bankServicesDAOImpl.registerUsername(username, password,email);
 		assertEquals(1, n);
 	}
 	
@@ -46,7 +42,7 @@ class BankServicesDAOImplTest {
 		String password = "pass";
 		String email = "preet@gmail.com";
 		
-		int n  = bankServicesDAOImpl.registerUsername(username, username,email);
+		int n  = bankServicesDAOImpl.registerUsername(username, password,email);
 		assertEquals(1, n);
 	}
 	

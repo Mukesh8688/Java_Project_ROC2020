@@ -1,15 +1,14 @@
 package com.bankapplication.dao.impl;
 
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Date;
 
 import com.bankapplication.dao.BankServicesDAOInterface;
 import com.bankapplication.dao.dbutil.BankAccountQueries;
@@ -20,8 +19,6 @@ import com.bankapplication.model.RegisterModel;
 import com.bankapplication.model.account.AccountTransaction;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.model.customer.CustomerInfo;
-import com.bankapplication.services.BankUsernamePasswordInterface;
-import com.bankapplication.model.RegisterModel;
 
 
 public class BankServicesDAOImpl implements BankServicesDAOInterface{
@@ -515,6 +512,119 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 	
 	
 	@Override
+	public int getCustomerIdByAccountNumber(int accountNumber) throws BusinessException{
+		
+		int customerId =0;
+		
+		try(Connection connection = PostgresDBConncetion.getConnection()){
+    		
+    		String sql = BankAccountQueries.GET_ACCOUNTINFO_BY_ACC_NUM;
+    		
+    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    		preparedStatement.setInt(1, accountNumber);
+    		
+    		
+    		ResultSet resultSet = preparedStatement.executeQuery();
+    		
+    		if(resultSet.next()) {
+    			
+    			customerId = resultSet.getInt("customers_customerid");
+    		}else {
+    			
+    			customerId = 0;
+    		}
+    		
+    	}catch(ClassNotFoundException|SQLException e) {
+    		
+    		System.out.println(e.getMessage());
+    	}
+		
+		
+		
+		return customerId;
+	}
+	
+	@Override
+	public int getAccountNumberByCustomerId(int customerId) throws BusinessException{
+		
+        int accountNumber =0;
+		
+		try(Connection connection = PostgresDBConncetion.getConnection()){
+    		
+    		String sql = BankAccountQueries.GET_ACC_NUMBER_BY_CUSTOMERID;
+    		
+    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    		preparedStatement.setInt(1, customerId);
+    		
+    		
+    		ResultSet resultSet = preparedStatement.executeQuery();
+    		
+    		if(resultSet.next()) {
+    			
+    			accountNumber = resultSet.getInt("accountnumber");
+    		}else {
+    			
+    			accountNumber = 0;
+    		}
+    		
+    	}catch(ClassNotFoundException|SQLException e) {
+    		
+    		System.out.println(e.getMessage());
+    	}
+		
+		
+		
+		return accountNumber;
+		
+		
+	}
+	
+	
+	
+	@Override
+	public boolean isVerifyAccountNumByCustomerId(int accountNumber,int customerId) throws BusinessException{
+		boolean isVerity = false;
+		
+		int accountNumByCustomerId = 0;
+		
+        try(Connection connection = PostgresDBConncetion.getConnection()){
+    		
+    		String sql = BankAccountQueries.GET_ACC_NUMBER_BY_CUSTOMERID;
+    		
+    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    		preparedStatement.setInt(1, customerId);
+    		
+    		
+    		ResultSet resultSet = preparedStatement.executeQuery();
+    		
+    		if(resultSet.next()) {
+    			
+    			accountNumByCustomerId = resultSet.getInt("accountnumber");
+    		}else {
+    			
+    			accountNumByCustomerId = 0;
+    		}
+    		
+    		if(accountNumByCustomerId == accountNumber) {
+    			
+    			isVerity = true;
+    		}
+    		
+    	}catch(ClassNotFoundException|SQLException e) {
+    		
+    		System.out.println(e.getMessage());
+    	}
+		
+		
+		
+		return isVerity;
+
+		
+	}
+	
+	
+	
+	@Override
 	public double getAccountBalance(int accountNumber) throws BusinessException{
 		double balance = 0.00;
 		
@@ -546,7 +656,58 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 		return balance;
 		
 	}
-
+   
+	
+	@Override
+	public CustomerInfo getCustomerDetailByAccountNumber(int customerId) throws BusinessException{
+        
+		CustomerInfo customerInfo = new CustomerInfo();
+		
+        try(Connection connection = PostgresDBConncetion.getConnection()){
+    		
+    		String sql = BankAccountQueries.GET_CUSTOMERINFO_BY_CUSTOMERID;
+    		
+    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    		preparedStatement.setInt(1,customerId);
+    		
+    		ResultSet resultSet = preparedStatement.executeQuery();
+    		
+    		if(resultSet.next()) {
+    			
+    			
+    			customerInfo.setCustomerId(customerId);
+    			customerInfo.setFirstName(resultSet.getString("firstname"));
+    			customerInfo.setLastName(resultSet.getString("lastname"));
+    			customerInfo.setAddressStreetName(resultSet.getString("address"));
+    			customerInfo.setCity(resultSet.getString("city"));
+    			customerInfo.setState(resultSet.getString("state"));
+    			customerInfo.setPhoneNumber(resultSet.getString("phonenumber"));
+    			customerInfo.setSSN(resultSet.getString("ssn"));
+    			customerInfo.setJoinDate(resultSet.getDate("joindate"));
+    			customerInfo.setCustomerRegisterId(resultSet.getInt("customer_registerid"));
+    			customerInfo.setZipCode(resultSet.getString("zipcode"));
+    			
+    			
+    			
+    			
+    			
+    		   
+    		}else {
+    			
+    			throw new BusinessException("Customer ID doesn't Exist ...\nPlease Try Again ...");
+    		}
+    		
+    	}catch(ClassNotFoundException|SQLException e) {
+    		
+    		System.out.println(e.getMessage());
+    	}
+    
+        
+     return customerInfo;
+		
+		
+		
+	}
 
 
 	@Override
@@ -556,7 +717,7 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 		
         try(Connection connection = PostgresDBConncetion.getConnection()){
     		
-    		String sql = BankAccountQueries.GET_ACC_BALANCE_BY_ACC_NUM;
+    		String sql = BankAccountQueries.GET_ACCOUNTINFO_BY_ACC_NUM;
     		
     		PreparedStatement preparedStatement = connection.prepareStatement(sql);
     		preparedStatement.setInt(1,accountNumber);
@@ -602,7 +763,7 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 		
 		 try(Connection connection = PostgresDBConncetion.getConnection()){
 	    		
-	    		String sql = BankAccountQueries.GET_ACC_BALANCE_BY_ACC_NUM;
+	    		String sql = BankAccountQueries.GET_ACCOUNTINFO_BY_ACC_NUM;
 	    		
 	    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
 	    		preparedStatement.setInt(1,accountNumber);
@@ -641,7 +802,7 @@ public class BankServicesDAOImpl implements BankServicesDAOInterface{
 		
 		 try(Connection connection = PostgresDBConncetion.getConnection()){
 	    		
-	    		String sql = BankAccountQueries.GET_ACC_BALANCE_BY_USERID;
+	    		String sql = BankAccountQueries.GET_ACC_BALANCE_BY_CUSTOMERID;
 	    		
 	    		PreparedStatement preparedStatement = connection.prepareStatement(sql);
 	    		preparedStatement.setInt(1,customerId);

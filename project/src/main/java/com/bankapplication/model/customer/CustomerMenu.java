@@ -3,13 +3,9 @@ package com.bankapplication.model.customer;
 
 import java.util.Scanner;
 
-import javax.security.auth.spi.LoginModule;
-
 import org.apache.log4j.Logger;
 
 import com.bankapplication.exception.BusinessException;
-import com.bankapplication.model.LogInModel;
-import com.bankapplication.model.account.BankAccount;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.services.BankServicesInterface;
 import com.bankapplication.services.impl.BankSerciesInterfaceImpl;
@@ -79,10 +75,10 @@ public class CustomerMenu {
 			      * switch used for Bank Services Menu option
 			      */
 			
-					switch (menuCustomeChoice) {
+				 switch (menuCustomeChoice) {
 						
 					
-					 case 1:
+			     case 1:
 						
 						 // Creating Bank Account
 						 
@@ -94,9 +90,9 @@ public class CustomerMenu {
 						
 						try {
 							
-							bankAccountRegister.askBankAccountDetail(customerInfo);
+							bankAccountRegister = BankAccountRegister.askBankAccountDetail(customerInfo);
 							
-							System.out.println(bankAccountRegister);
+							//System.out.println(bankAccountRegister);
 							
 							isSuccess = bankServicesInterface.applyNewBankAcoount(customerInfo , bankAccountRegister);
 							
@@ -119,7 +115,7 @@ public class CustomerMenu {
 								
 									
 							 
-					 case 2:// for retrieve account balance
+				 case 2:// for retrieve account balance
 								 
 					      CustomerViewAccBalance accountViewBalance = new CustomerViewAccBalance();
 					      try {
@@ -127,7 +123,7 @@ public class CustomerMenu {
 							bankServicesInterface.viewAccountBalance(accountViewBalance, CustomerViewAccBalance.choice);
 							
 						  } catch (BusinessException e) {
-							logger.trace(e.getMessage());
+							logger.fatal(e.getMessage());
 						  }
                           
 					      
@@ -138,7 +134,7 @@ public class CustomerMenu {
 											
 
 							 
-					 case 3:  
+				case 3:  
 						 
 				         /* Withdraw section */
 						/* This is Withdraw Bank Services
@@ -174,7 +170,7 @@ public class CustomerMenu {
 								
 					     break;	
 					     
-					 case 4:  
+			    case 4:  
 						 
 						 /* This is a deposit section
 							* 1 - for making a withdraw
@@ -210,7 +206,7 @@ public class CustomerMenu {
 					     break;	
 								
 								 
-					 case 5:  
+			   case 5:  
 						  
 						  // Balance Tranfer  Section
 						 
@@ -239,7 +235,7 @@ public class CustomerMenu {
 								 
 								 
 							 
-					 case 6:
+			  case 6:
 						 // EXIT from Customer's Services Menu		
 						 System.out.println("\n");
 						 System.out.println("<<<== THANK YOU FOR USING SERVICES ==>>");
@@ -249,7 +245,7 @@ public class CustomerMenu {
 
 										
 							 
-					 default:
+			  default:
 								 
 								
 						 System.out.println();
@@ -268,7 +264,7 @@ public class CustomerMenu {
 		
 				    		
 		     
-		  }while(menuCustomeChoice != 6);
+		 }while(menuCustomeChoice != 6);
 		  
 		
 	

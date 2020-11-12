@@ -1,7 +1,6 @@
 package com.bankapplication.services;
 
 import com.bankapplication.exception.BusinessException;
-import com.bankapplication.model.account.BankAccount;
 import com.bankapplication.model.account.BankAccountRegister;
 import com.bankapplication.model.customer.BalanceTranfer;
 import com.bankapplication.model.customer.CustomerInfo;

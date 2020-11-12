@@ -20,7 +20,7 @@ drop table project_register ;
       
       
       
-insert into project_schema.project_register(username,password,email) values('Preet','pass2','cmukesh8688@gmail.com');      
+insert into project_schema.bankapp_register(username,password,email,usertype) values('hari','pass','hari@gmail.com',1);      
 
 
 
@@ -70,6 +70,8 @@ delete from bank_account ;
 
 drop table bank_account;
  
+
+
  
  create sequence bank_acc_num_id;
 
@@ -91,6 +93,9 @@ drop table bank_account;
          references project_schema.bank_customers(customerId));
  
  )
+ 
+ 
+ 
  
  
 
@@ -251,9 +256,16 @@ select * from bank_account ba ;
 
 select * from bank_customers bc ;
 
+select * from bank_transactions bt ;
+
 
 select * from bank_customers bc  where customers_customerid  = 13
 
 SELECT balance, openingbalance, accountname, customers_customerid, dateopened, interest, account_status, accounttype, branchloc
 FROM project_schema.bank_account
 WHERE accountnumber = 1000003 
+
+
+delete from bankapp_register where id between 20 and 23;
+
+
