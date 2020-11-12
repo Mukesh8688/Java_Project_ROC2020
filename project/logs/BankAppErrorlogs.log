@@ -2075,3 +2075,29 @@ Please try again...
 11-12-2020 Thursday CST 07:44:29.594   [main] FATAL com.bankapplication.model.customer.CustomerMenu:56 - 6) Exit
 11-12-2020 Thursday CST 07:44:29.594   [main] FATAL com.bankapplication.model.customer.CustomerMenu:57 - ===============================
 11-12-2020 Thursday CST 07:44:29.594   [main] FATAL com.bankapplication.model.customer.CustomerMenu:58 - Please enter appropriate choice(1-6) :) 
+11-12-2020 Thursday CST 07:49:53.133   [main] FATAL com.bankapplication.model.customer.CustomerMenu:36 -  **** MAIN MENU **** 
+11-12-2020 Thursday CST 07:49:53.137   [main] FATAL com.bankapplication.model.customer.CustomerMenu:37 - ================================
+11-12-2020 Thursday CST 07:49:53.137   [main] FATAL com.bankapplication.model.customer.CustomerMenu:38 - 1) Log in 
+11-12-2020 Thursday CST 07:49:53.137   [main] FATAL com.bankapplication.model.customer.CustomerMenu:39 - 2) Sign up 
+11-12-2020 Thursday CST 07:49:53.138   [main] FATAL com.bankapplication.model.customer.CustomerMenu:40 - 3) Admin
+11-12-2020 Thursday CST 07:49:53.138   [main] FATAL com.bankapplication.model.customer.CustomerMenu:41 - 4) EXIT
+11-12-2020 Thursday CST 07:49:53.138   [main] FATAL com.bankapplication.model.customer.CustomerMenu:42 - ================================
+11-12-2020 Thursday CST 07:49:53.138   [main] FATAL com.bankapplication.model.customer.CustomerMenu:43 - Please enter appropriate choice(1-4) :) 
+11-12-2020 Thursday CST 07:49:56.511   [main] FATAL com.bankapplication.model.RegisterModel:110 - Please Enter Username:
+11-12-2020 Thursday CST 07:49:58.464   [main] FATAL com.bankapplication.model.RegisterModel:113 - Please Enter Password:
+11-12-2020 Thursday CST 07:50:00.923   [main] FATAL com.bankapplication.model.customer.CustomerMenu:47 -  ******** WELCOME ********** 
+11-12-2020 Thursday CST 07:50:00.923   [main] FATAL com.bankapplication.model.customer.CustomerMenu:49 -  Services Menu 
+11-12-2020 Thursday CST 07:50:00.923   [main] FATAL com.bankapplication.model.customer.CustomerMenu:50 - ==============================
+11-12-2020 Thursday CST 07:50:00.924   [main] FATAL com.bankapplication.model.customer.CustomerMenu:51 - 1) Apply for New Bank Account 
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:52 - 2) View Account Balance
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:53 - 3) Withdraw 
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:54 - 4) Deposit 
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:55 - 5) Balance Transfer
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:56 - 6) Exit
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:57 - ===============================
+11-12-2020 Thursday CST 07:50:00.925   [main] FATAL com.bankapplication.model.customer.CustomerMenu:58 - Please enter appropriate choice(1-6) :) 
+11-12-2020 Thursday CST 07:50:04.125   [main] FATAL com.bankapplication.model.customer.CustomerMenu:148 -  Withdraw Section 
+11-12-2020 Thursday CST 07:50:04.126   [main] FATAL com.bankapplication.model.customer.CustomerMenu:149 - -------------------
+11-12-2020 Thursday CST 07:50:04.127   [main] FATAL com.bankapplication.model.account.BankAccountRegister:221 - Type 1 - Checking Account :
+11-12-2020 Thursday CST 07:50:04.127   [main] FATAL com.bankapplication.model.account.BankAccountRegister:222 - Type 2 - Saving Account :
+11-12-2020 Thursday CST 07:50:04.127   [main] FATAL com.bankapplication.model.account.BankAccountRegister:223 - Type 3 - EXIT 

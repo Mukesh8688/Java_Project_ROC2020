@@ -145,6 +145,8 @@ public class CustomerMenu {
 						 System.out.println();
 						 
 						 int withdrawTransactionType =1;
+						 logger.fatal(" You are in Withdraw Section ");
+						 logger.fatal("-----------------------------");
 						 
 						 try {
 							 
@@ -180,6 +182,8 @@ public class CustomerMenu {
 							 System.out.println();
 							 
 							 int depositTransactionType =2;
+							 logger.fatal(" You are in Deposit Section ");
+							 logger.fatal("---------------------------");
 							 
 							 try {
 								 

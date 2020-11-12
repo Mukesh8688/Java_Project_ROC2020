@@ -305,7 +305,7 @@ public int bankTransaction(int accountTypeChoice, int tranastionType) throws Bus
 		    
 		    logger.trace("entetedACCNum: "+ accountNumber );
 		    
-		    logger.fatal("Please enter Amount what you want to make :");
+		    logger.fatal("Please enter Amount what you want:");
 		    Double withdramAmount = Double.parseDouble(scanner.nextLine());
 		    logger.trace("entetedACCNum: "+ withdramAmount );
 		    
