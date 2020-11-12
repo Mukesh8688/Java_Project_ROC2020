@@ -44,18 +44,18 @@ public class CustomerMenu {
 	    
 		  do {   
 			     System.out.println("\n");
-			     System.out.println(" ******** WELCOME ********** ");
+			     logger.fatal(" ******** WELCOME ********** ");
 		    	 System.out.println(); 
-				 System.out.println(" Services Menu ");
-				 System.out.println("==============================");
-				 System.out.println("1) Apply for New Bank Account ");
-				 System.out.println("2) View Account Balance");
-				 System.out.println("3) Withdraw ");
-				 System.out.println("4) Deposit ");
-				 System.out.println("5) Balance Transfer");
-			     System.out.println("6) Exit");
-			     System.out.println("===============================");
-			     System.out.println("Please enter appropriate choice(1-6) :) ");
+		    	 logger.fatal(" Services Menu ");
+		    	 logger.fatal("==============================");
+		    	 logger.fatal("1) Apply for New Bank Account ");
+		    	 logger.fatal("2) View Account Balance");
+		    	 logger.fatal("3) Withdraw ");
+		    	 logger.fatal("4) Deposit ");
+		    	 logger.fatal("5) Balance Transfer");
+		    	 logger.fatal("6) Exit");
+		    	 logger.fatal("===============================");
+		    	 logger.fatal("Please enter appropriate choice(1-6) :) ");
 			     
 			     
 			     // try catch for Number format Exception
@@ -64,7 +64,7 @@ public class CustomerMenu {
 			     }catch(NumberFormatException e) {
 			    	 
 				    System.out.println();
-				    System.out.println("You didn't choose any option !!!");
+				    logger.fatal("You didn't choose any option !!!");
 			    
 			    	 menuCustomeChoice = 0;
 			     }
@@ -105,7 +105,7 @@ public class CustomerMenu {
 							logger.fatal("You opened Bank Account Successfully!");
 						 }else {
 							logger.fatal("Sorry !!!Account haven't been opend yet ... Please Try Again Or Contact Any Local Bank Agent !!");
-							System.out.println("...THANK YOU...");
+							logger.fatal("...THANK YOU...");
 						
 						 }
 											
@@ -238,7 +238,7 @@ public class CustomerMenu {
 			  case 6:
 						 // EXIT from Customer's Services Menu		
 						 System.out.println("\n");
-						 System.out.println("<<<== THANK YOU FOR USING SERVICES ==>>");
+						 logger.fatal("<<<== THANK YOU FOR USING SERVICES ==>>");
    
 						
 					    break;	 
@@ -250,11 +250,11 @@ public class CustomerMenu {
 								
 						 System.out.println();
 								
-						 System.out.println("SORRY !!! .. This is INVALIDE choice Menu Number !!");
+						 logger.fatal("SORRY !!! .. This is INVALIDE choice Menu Number !!");
 						
 						 System.out.println();
 						
-						 System.out.println("Please Reenter right choice number For Bank Servie Menu ...  Thank YOU");
+						 logger.fatal("Please reenter right choice number For Bank Servie Menu ...  Thank YOU");
 											
 								
 						 break;

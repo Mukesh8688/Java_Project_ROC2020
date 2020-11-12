@@ -68,11 +68,11 @@ public class CustomerViewAccBalance {
 	public void askAccoutParameter() throws BusinessException{
 		
 		System.out.println();
-		System.out.println("Select Type to view account");
-		System.out.println("------------------------------");
-		System.out.println("1) By Account Number");
-		System.out.println("2) View All Accounts");
-		System.out.println("------------------------------");
+		logger.fatal("Select Type to view account");
+		logger.fatal("------------------------------");
+		logger.fatal("1) By Account Number");
+		logger.fatal("2) View All Accounts");
+		logger.fatal("------------------------------");
 		
 	    choice = Integer.parseInt(scanner.nextLine());
 		
@@ -96,11 +96,11 @@ public class CustomerViewAccBalance {
 		int choiceByEmployee = 0;
 		
 		System.out.println();
-		System.out.println("Select Type to view account");
-		System.out.println("------------------------------");
-		System.out.println("1) By Account Number");
-		System.out.println("2) View All Accounts");
-		System.out.println("------------------------------");
+		logger.fatal("Select Type to view account");
+		logger.fatal("------------------------------");
+		logger.fatal("1) By Account Number");
+		logger.fatal("2) View All Accounts");
+		logger.fatal("------------------------------");
 		
 	    choice = Integer.parseInt(scanner.nextLine());
 		

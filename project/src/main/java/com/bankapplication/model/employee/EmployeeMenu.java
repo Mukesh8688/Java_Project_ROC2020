@@ -39,14 +39,14 @@ public class EmployeeMenu {
 		  do {   
 			   
 		    	 System.out.println(); 
-				 System.out.println(" Employee Section Menu ");
-				 System.out.println("=============================");
-				 System.out.println("1) View Account Details. ");
-				 System.out.println("2) View log of all transaction ");
-				 System.out.println("3) Update Customer's Account Status.");
-				 System.out.println("4) EXIT ");
-				 System.out.println("==============================");
-			     System.out.println("Please enter appropriate choice(1-4) :) ");
+		    	 logger.fatal(" Employee Section Menu ");
+		    	 logger.fatal("=============================");
+		    	 logger.fatal("1) View Account Details. ");
+		    	 logger.fatal("2) View log of all transaction ");
+		    	 logger.fatal("3) Update Customer's Account Status.");
+		    	 logger.fatal("4) EXIT ");
+		    	 logger.fatal("==============================");
+		    	 logger.fatal("Please enter appropriate choice(1-4) :) ");
 			     
 			     
 			     // try catch for Number format Exception
@@ -55,7 +55,7 @@ public class EmployeeMenu {
 			     }catch(NumberFormatException e) {
 			    	 
 				    System.out.println();
-				   	System.out.println("You didn't choose any option !!!");
+				    logger.fatal("You didn't choose any option !!!");
 			    
 			    	 menuEmployeeChoice = 0;
 			     }
@@ -92,8 +92,8 @@ public class EmployeeMenu {
 							 
 					
 					 
-					 System.out.println("View all transactions by account number:");
-					 System.out.println("------------------------------------------");
+					 logger.fatal("View all transactions by account number:");
+					 logger.fatal("------------------------------------------");
 					 logger.fatal("Enter Account Number : ");
 					 int accountNumber = Integer.parseInt(scanner.nextLine());
 					 
@@ -119,8 +119,8 @@ public class EmployeeMenu {
 					 // Approve or Reject Customer's Account
 					 
 				     
-					 System.out.println("Bank Account Status Admin Section :");
-					 System.out.println("----------------------------------");
+					 logger.fatal("Bank Account Status Admin Section :");
+					 logger.fatal("----------------------------------");
 					 logger.fatal("Enter Account Number : ");
 					 int accountNumberForStatus = Integer.parseInt(scanner.nextLine());
 					 
@@ -163,7 +163,7 @@ public class EmployeeMenu {
 							
 					 System.out.println();
 							
-					 System.out.println("SORRY !!! .. This is INVALIDE choice Menu Number !!");
+					 logger.fatal("SORRY !!! .. This is INVALIDE choice Menu Number !!");
 					
 					 System.out.println();
 				

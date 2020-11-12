@@ -108,13 +108,13 @@ public class AdminSection {
 		
 		int adminMenu = 0;
 		System.out.println();
-		System.out.println("Admin Menu");
-		System.out.println("===============================");
-		System.out.println("1)Create Employee User Profile.");
-		System.out.println("2)Update Invalid Transaction.");
-		System.out.println("3)Exit");
-		System.out.println("================================");
-	    System.out.println("Please enter appropriate choice[1-3]:");
+		logger.fatal("Admin Menu");
+		logger.fatal("===============================");
+		logger.fatal("1)Create Employee User Profile.");
+		logger.fatal("2)Update Invalid Transaction.");
+		logger.fatal("3)Exit");
+		logger.fatal("================================");
+		logger.fatal("Please enter appropriate choice[1-3]:");
 		
 		adminMenu = Integer.parseInt(scanner.nextLine());
 		

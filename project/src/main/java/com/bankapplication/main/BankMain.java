@@ -2,14 +2,21 @@ package com.bankapplication.main;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import com.bankapplication.exception.BusinessException;
 import com.bankapplication.model.LogInModel;
 import com.bankapplication.model.SignUpModel;
+import com.bankapplication.model.customer.CustomerMenu;
 
 
 
 public class BankMain {
 	
+	
+	/* create object for log4j */
+	
+	private static Logger logger = Logger.getLogger(CustomerMenu.class);
 
 
 	public static void main(String[] args)  {
@@ -26,22 +33,23 @@ public class BankMain {
      	
 		do {
 			System.out.println();
-	        System.out.println(" **** MAIN MENU **** ");		
-		    System.out.println("================================");	
-		    System.out.println("1) Log in ");
-		    System.out.println("2) Sign up ");
-		    System.out.println("3) Admin");
-		    System.out.println("4) EXIT");
-		    System.out.println("================================");
-		    System.out.println("Please enter appropriate choice(1-4) :) ");
+	        logger.fatal(" **** MAIN MENU **** ");		
+	        logger.fatal("================================");	
+	        logger.fatal("1) Log in ");
+	        logger.fatal("2) Sign up ");
+	        logger.fatal("3) Admin");
+	        logger.fatal("4) EXIT");
+	        logger.fatal("================================");
+	        logger.fatal("Please enter appropriate choice(1-4) :) ");
 		
 		 
 		// to prevent from enter event from keyboard
 		    try {
 		    	mainMenuChoice = Integer.parseInt(scanner.nextLine());
+		    	logger.trace("enteredOption:" +mainMenuChoice);
 		    }catch(NumberFormatException e) {
 		    	System.out.println();
-		    	System.out.println("You didn't choose any option !!! ...");
+		    	logger.fatal("You didn't choose any option !!! ...");
 		    	mainMenuChoice = 0;
 		    }
 		
@@ -79,8 +87,8 @@ public class BankMain {
 				  } catch (BusinessException e) {
 					  
 					  System.out.println();
-					  System.out.println(" REGISTRATIOM FAIL !!! ... ");
-					  System.out.println(e.getMessage());
+					  logger.fatal(" REGISTRATIOM FAIL !!! ... ");
+					  logger.fatal(e.getMessage());
 					  System.out.println();
 					
 	
@@ -94,9 +102,9 @@ public class BankMain {
 		     case 3:
 		    	
 		    	   System.out.println();
-		    	   System.out.println("==== Warning !!! This option is for admin User only =====");
+		    	   logger.fatal("==== Warning !!! This option is for admin User only =====");
 		    	   System.out.println();
-				   System.out.println("If you are not admin user ... \nPlease type 8 to exit this section ... \nOR Enter any Number to continue ...");
+				   logger.fatal("If you are not admin user ... \nPlease type 8 to exit this section ... \nOR Enter any Number to continue ...");
 				   
 		           int admin = 0;
 		           
@@ -128,14 +136,14 @@ public class BankMain {
 		    	 
 		     case 4: // number 4 for EXIT system
 		    	 System.out.println("\n");
-		    	 System.out.println("<<<=== THANK YOU FOR USING BANK APPLICATION VERSION 1.0 ===>>");
+		    	 logger.fatal("<<<=== THANK YOU FOR USING BANK APPLICATION VERSION 1.0 ===>>");
 		    	 break;
 		    	 
 		    	 
 	
 			default:
 				System.out.println();
-				System.out.println("Please Choose Right option ... \nOr type 4 to exit from Application ... \n\n===THANK YOU===");
+				logger.fatal("Please Choose Right option ... \nOr type 4 to exit from Application ... \n\n===THANK YOU===");
 				break;
 			}
 

@@ -418,11 +418,11 @@ public class BankAccountRegister {
 		System.out.println();
 		//System.out.println("Account Details of : " + getCustomerAccountNum() );
 		//System.out.println("-----------------------------");
-		System.out.println( "[ Account Number :" + getCustomerAccountNum() +", Account Name :" + getAccountName() + 
+		logger.fatal( "[ Account Number :" + getCustomerAccountNum() +", Account Name :" + getAccountName() + 
 				            ", Account Balance :$" + getBalance()+ " ]") ;
-		logger.trace(getCustomerAccountNum());
-		logger.trace(getAccountName());
-		logger.trace(getBalance());
+//		logger.trace(getCustomerAccountNum());
+//		logger.trace(getAccountName());
+//		logger.trace(getBalance());
 		//System.out.println();
 		
 	}

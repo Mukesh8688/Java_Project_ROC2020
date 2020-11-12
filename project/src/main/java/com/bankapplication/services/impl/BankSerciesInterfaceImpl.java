@@ -218,8 +218,8 @@ public void viewAccountBalance(CustomerViewAccBalance customerViewAccBalance , i
 				
 			    BankAccountRegister bankBalance = bankServiceDAO.getAllAccDetailsByAccountNumber(accountNumber);
 			    System.out.println();
-				System.out.println("Customer Name : " + LogInModel.getUsername().toUpperCase());
-				System.out.println("-------------------------");
+			    logger.fatal("Customer Name : " + LogInModel.getUsername().toUpperCase());
+			    logger.fatal("-------------------------");
 				bankBalance.displayAccountDeatails();
 			}else {	
 				
@@ -235,8 +235,8 @@ public void viewAccountBalance(CustomerViewAccBalance customerViewAccBalance , i
 			List<BankAccountRegister> accountBalanceList = bankServiceDAO.getAllAccountBalanceByUserId(customerViewAccBalance.getByCustomerId());
 			if(accountBalanceList.size() != 0) {
 				System.out.println();
-				System.out.println("Customer Name : " + LogInModel.getUsername().toUpperCase());
-				System.out.println("-------------------------");
+				logger.fatal("Customer Name : " + LogInModel.getUsername().toUpperCase());
+				logger.fatal("-------------------------");
 				int n =0;
 				for(BankAccountRegister list: accountBalanceList ) {
 					list.displayAccountDeatails();
@@ -277,12 +277,12 @@ public int bankTransaction(int accountTypeChoice, int tranastionType) throws Bus
 		List<BankAccountRegister> accountBalanceList = bankServiceDAO.getAllAccountByCustomerIdandAccountTYpe(customerId, accountTypeChoice);
 		if(accountBalanceList.size() > 1) {
 			System.out.println();
-			System.out.println("You have more than one account");
-			System.out.println("------------------------------");
+			logger.fatal("You have more than one account");
+			logger.fatal("------------------------------");
 			for(BankAccountRegister list: accountBalanceList ) {
 				list.displayAccountDeatails();
 			}
-			
+	        System.out.println();
 		    logger.fatal("It seems more than one account...\nPlease enter account number :");
 		    int accountNumber = Integer.parseInt(scanner.nextLine());
 		    
@@ -305,14 +305,15 @@ public int bankTransaction(int accountTypeChoice, int tranastionType) throws Bus
 		    
 		    logger.trace("entetedACCNum: "+ accountNumber );
 		    
-		    logger.fatal("Please enter Amount what you want to make a withdraw :");
+		    logger.fatal("Please enter Amount what you want to make :");
 		    Double withdramAmount = Double.parseDouble(scanner.nextLine());
 		    logger.trace("entetedACCNum: "+ withdramAmount );
 		    
 		    
 		    BankAccountRegister bankAccountDetail = bankServiceDAO.updateBankAccount(accountNumber, withdramAmount, tranastionType);
 		    
-		    System.out.println("New " + bankAccountDetail.getAccountName() + "Balance : $" + bankAccountDetail.getBalance()  );
+		    System.out.println();
+		    logger.fatal("New " + bankAccountDetail.getAccountName() + " Balance : $" + bankAccountDetail.getBalance()  );
 		  
 		    
 		}else if(accountBalanceList.size() == 1) {
@@ -327,7 +328,7 @@ public int bankTransaction(int accountTypeChoice, int tranastionType) throws Bus
 		    
             BankAccountRegister bankAccountDetail = bankServiceDAO.updateBankAccount(accountNumber, withdramAmount, tranastionType);
 		    
-		    System.out.println("New " + bankAccountDetail.getAccountName() + " Balance : $" + bankAccountDetail.getBalance()  );
+            logger.fatal("New " + bankAccountDetail.getAccountName() + " Balance : $" + bankAccountDetail.getBalance()  );
 		    
 		    
 			
@@ -526,13 +527,13 @@ public void getAllAccountInfoByEmployee(int byAccViewChoice, int accountNumber) 
 		
 		  List<BankAccountRegister> allAccountDetailList = bankServiceDAO.getAllAccDetailsListByEmployee();
 		  System.out.println();
-		  System.out.println("All Accounts Detail List");
-		  System.out.println("-------------------------");
+		  logger.fatal("All Accounts Detail List");
+		  logger.fatal("-------------------------");
 		  //System.out.println(customerInfo);
 		  
 		  if(allAccountDetailList.size() > 0) {
 			  for( BankAccountRegister accList : allAccountDetailList ) {
-			     System.out.println(accList);
+				  logger.fatal(accList);
 			  }
 		  }else {
 			  
@@ -558,8 +559,8 @@ public void getAllTransactionByAccountNumber(int accountNumber) throws BusinessE
 		
 		List<AccountTransaction>  accountTransactionList = bankServiceDAO.getAllTransactionsByAccountNumber(accountNumber);
 		
-		System.out.println("All transaction of account number : " + accountNumber);
-		System.out.println("------------------------------------");
+		logger.fatal("All transaction of account number : " + accountNumber);
+		logger.fatal("------------------------------------");
 		
 		for(AccountTransaction accountTransaction : accountTransactionList ) {
 			
@@ -581,12 +582,12 @@ public int changeBankAccountStatus(int accountNumber) throws BusinessException {
 	int status = 0;
 	if(accountNumber > 0) {
 		System.out.println();
-		System.out.println(" ACCOUNT STATUS NUMBER");
-		System.out.println("------------------------");
-		System.out.println("1) ACTIVE");
-		System.out.println("2) SUSPEND");
-		System.out.println("3) CLOSED");
-		System.out.println("------------------------");
+		logger.fatal(" ACCOUNT STATUS NUMBER");
+		logger.fatal("------------------------");
+		logger.fatal("1) ACTIVE");
+		logger.fatal("2) SUSPEND");
+		logger.fatal("3) CLOSED");
+		logger.fatal("------------------------");
 		logger.fatal("Please enter number to change status:" );
 		int accountStatus = Integer.parseInt(scanner.nextLine());
 		
